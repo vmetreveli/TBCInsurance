@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "TBCInsurance.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TBCInsurance.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TBCInsurance.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TBCInsurance.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TBCInsurance.Domain/TBCInsurance.Domain.csproj",
+      "msbuildProject": "../TBCInsurance.Domain/TBCInsurance.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "TBCInsurance.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/vmetreveli/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/TBCInsurance.Application.csproj",
+      "projectName": "TBCInsurance.Application",
+      "projectPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/TBCInsurance.Application.csproj",
+      "packagesPath": "/Users/vmetreveli/.nuget/packages/",
+      "outputPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/TBCInsurance.Domain.csproj": {
+              "projectPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/TBCInsurance.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.deps.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.csprojAssemblyReference.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.AssemblyInfoInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.AssemblyInfo.cs
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.pdb

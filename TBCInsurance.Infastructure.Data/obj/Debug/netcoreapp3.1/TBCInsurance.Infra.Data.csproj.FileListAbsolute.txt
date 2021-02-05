@@ -1,0 +1,15 @@
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.deps.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.runtimeconfig.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.runtimeconfig.dev.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.csprojAssemblyReference.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.AssemblyInfoInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.AssemblyInfo.cs
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.genruntimeconfig.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infra.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infra.Data.csproj.CopyComplete

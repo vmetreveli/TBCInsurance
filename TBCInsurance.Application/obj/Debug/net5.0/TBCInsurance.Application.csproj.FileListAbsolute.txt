@@ -1,0 +1,15 @@
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.deps.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csprojAssemblyReference.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfoInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfo.cs
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CopyComplete
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.pdb

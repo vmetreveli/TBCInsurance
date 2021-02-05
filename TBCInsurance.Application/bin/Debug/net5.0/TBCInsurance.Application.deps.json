@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TBCInsurance.Application/1.0.0": {
+        "dependencies": {
+          "TBCInsurance.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TBCInsurance.Application.dll": {}
+        }
+      },
+      "TBCInsurance.Domain/1.0.0": {
+        "runtime": {
+          "TBCInsurance.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TBCInsurance.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TBCInsurance.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
