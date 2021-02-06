@@ -81,7 +81,8 @@ namespace TBCInsurance.Application.Services
                 {
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
                 }
-
+                
+                
 
                 _studentRepository.Insert(student);
 
@@ -109,6 +110,40 @@ namespace TBCInsurance.Application.Services
                 }
 
                 return false;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
+        }
+        public bool UpdateStudent(StudentViewModel student)
+        {
+            try
+            {
+                _logger.LogInformation($"AddStudent:");
+
+                if (_studentRepository.GetAll().Any(i => i.PersonNumber == student.PersonNumber))
+                {
+                    throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
+                }
+
+                if ((DateTime.Today.Year - student.BirthDate.Year) < 16)
+                {
+                    throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
+                }
+
+
+                var st=_studentRepository.GetById(student.Id);
+                st.Name = student.Name;
+                st.Sex = student.Sex;
+                st.BirthDate = student.BirthDate;
+                st.LastName = st.LastName;
+                st.PersonNumber = st.PersonNumber;
+                
+                _studentRepository.Update(st);
+
+                return true;
             }
             catch(Exception ex)
             {

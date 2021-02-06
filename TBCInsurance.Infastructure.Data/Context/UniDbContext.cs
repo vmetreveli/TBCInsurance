@@ -10,5 +10,6 @@ namespace TBCInsurance.Infastructure.Data.Context
         public UniDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Gender> Gender { get; set; }
     }
 }

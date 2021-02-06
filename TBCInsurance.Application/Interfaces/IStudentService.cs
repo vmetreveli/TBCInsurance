@@ -8,5 +8,6 @@ namespace TBCInsurance.Application.Interfaces
         PagedResult<StudentViewModel> FindStudents(PageFilter filter);
         bool AddStudent(StudentViewModel student);
         bool RemoveStudent(int id);
+        bool UpdateStudent(StudentViewModel student);
     }
 }
