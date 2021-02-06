@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TBCInsurance.Domain.Models
 {
-    public abstract class Student
+    public  class Student
     {
         public int Id { get; set; }
         public string PersonNumber { get; set; }

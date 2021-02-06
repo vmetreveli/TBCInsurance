@@ -1,20 +1,120 @@
+using System;
+using System.Linq;
+using Microsoft.Extensions.Logging;
 using TBCInsurance.Domain.Interfaces;
 using TBCInsurance.Application.Interfaces;
 using TBCInsurance.Domain.Models;
+using Newtonsoft.Json;
+using TBCInsurance.Application.Utils;
+
 
 namespace TBCInsurance.Application.Services
 {
     public class StudentService : IStudentService
     {
         private readonly IRepository<Student> _studentRepository;
-        public StudentService(IRepository<Student> studentRepository)
+        private readonly ILogger _logger;
+        public StudentService(IRepository<Student> studentRepository, ILogger<StudentService> logger)
         {
             _studentRepository = studentRepository;
+            _logger = logger;
         }
 
-        public StudentViewModel GetStudents()
+        public IQueryable<StudentViewModel> GetStudents()
         {
-            return new StudentViewModel() { Students = _studentRepository.GetAll() };
+            return _studentRepository.GetAll().Select(i => new StudentViewModel
+            {
+                Id = i.Id,
+                BirthDate = i.BirthDate,
+                LastName = i.LastName,
+                Name = i.Name,
+                PersonNumber = i.PersonNumber,
+                Sex = i.Sex
+            });
+        }
+        public PagedResult<StudentViewModel> FindStudents(PageFilter filter)
+        {
+            try
+            {
+                _logger.LogInformation($"FindStudents:{filter}");
+
+                var obj = filter;
+
+                // if (!string.IsNullOrEmpty(filter))
+                // {
+                //     obj = JsonConvert.DeserializeObject<PageFilter>(filter);
+                // }
+
+                // var query = !string.IsNullOrEmpty(obj?.PersonNumber)
+                //     ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber || i.BirthDate == obj.BirthDate)
+                //     : _studentRepository.GetAll();
+                var query = _studentRepository.GetAll().Select(i => new StudentViewModel
+                {
+                    Id = i.Id,
+                    BirthDate = i.BirthDate,
+                    LastName = i.LastName,
+                    Name = i.Name,
+                    PersonNumber = i.PersonNumber,
+                    Sex = i.Sex
+                });
+
+                return query.GetPaged(obj.PageIndex, obj.PageSize);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return new PagedResult<StudentViewModel>();
+            }
+        }
+        public bool AddStudent(StudentViewModel student)
+        {
+            try
+            {
+                _logger.LogInformation($"AddStudent:");
+
+                if (_studentRepository.GetAll().Any(i => i.PersonNumber == student.PersonNumber))
+                {
+                    throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
+                }
+
+                if ((DateTime.Today.Year - student.BirthDate.Year) < 16)
+                {
+                    throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
+                }
+
+
+                _studentRepository.Insert(student);
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
+        }
+        public bool RemoveStudent(int id)
+        {
+            try
+            {
+                _logger.LogInformation($"RemoveStudent:{id}");
+
+
+                var student = _studentRepository.GetById(id);
+
+                if (student != null)
+                {
+                    _studentRepository.Delete(student);
+                    return true;
+                }
+
+                return false;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return false;
+            }
         }
     }
 }

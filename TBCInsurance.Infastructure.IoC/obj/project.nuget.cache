@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ReHU6RYOWHrkORExezJnFhnu1JS876jib/Z1LqPL1wGW71p2ZkWNaZQa6S49SpM0cbT2pDb6Q8XxBdWUeQb2YA==",
+  "dgSpecHash": "W/tASXGeSTdzfT7p1pPerHb2UGhbUc9yHCgPlUAyDxddWZM6GSEonKeOe17wueJDtc48blswE5XamoIa4dwIzA==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "/Users/vmetreveli/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.4/sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",

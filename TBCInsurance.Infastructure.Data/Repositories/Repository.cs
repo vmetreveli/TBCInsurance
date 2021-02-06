@@ -23,19 +23,21 @@ namespace TBCInsurance.Infastructure.Data.Repositories
         public T Insert(T entity)
         {
             DbSet.Add(entity);
+            _context.SaveChanges();
             return entity;
         }
 
         public void Delete(T entity)
         {
             DbSet.Remove(entity);
+            _context.SaveChanges();
         }
 
         public void Update(T entity)
         {
             DbSet.Attach(entity);
             var entry = _context.Entry(entity);
-            //  entry.State = System.Data.EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public IQueryable<T> SearchFor(Expression<Func<T, bool>> predicate)
