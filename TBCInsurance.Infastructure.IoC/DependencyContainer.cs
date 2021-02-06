@@ -2,6 +2,7 @@ using TBCInsurance.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using TBCInsurance.Application.Interfaces;
 using TBCInsurance.Application.Services;
+using TBCInsurance.Domain.Models;
 using TBCInsurance.Infastructure.Data.Repositories;
 
 namespace TBCInsurance.Infastructure.IoC
@@ -14,7 +15,7 @@ namespace TBCInsurance.Infastructure.IoC
             services.AddScoped<IStudentService, StudentService>();
 
             //CleanArchitecture.Domain.Interfaces | CleanArchitecture.Infra.Data.Repositories
-            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IRepository<Student>, Repository<Student>>();
         }  
     }
 }
