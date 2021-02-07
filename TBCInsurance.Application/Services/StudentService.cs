@@ -32,23 +32,26 @@ namespace TBCInsurance.Application.Services
                 Sex = i.Sex
             });
         }
-        public PagedResult<StudentViewModel> FindStudents(PageFilter filter)
+        public PagedResult<StudentViewModel> FindStudents(string filter)
         {
             try
             {
                 _logger.LogInformation($"FindStudents:{filter}");
 
-                var obj = filter;
+                PageFilter obj = null;
 
-                // if (!string.IsNullOrEmpty(filter))
-                // {
-                //     obj = JsonConvert.DeserializeObject<PageFilter>(filter);
-                // }
+                if (!string.IsNullOrEmpty(filter))
+                {
+                    obj = JsonConvert.DeserializeObject<PageFilter>(filter);
+                }
 
-                // var query = !string.IsNullOrEmpty(obj?.PersonNumber)
-                //     ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber || i.BirthDate == obj.BirthDate)
-                //     : _studentRepository.GetAll();
-                var query = _studentRepository.GetAll().Select(i => new StudentViewModel
+                var query = !string.IsNullOrEmpty(obj?.PersonNumber)
+                    ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber || i.BirthDate == obj.BirthDate
+                                                                                           || i.LastName == obj.LastName ||
+                                                                                           i.Name == obj.Name)
+                    : _studentRepository.GetAll();
+
+                var res = query.Select(i => new StudentViewModel
                 {
                     Id = i.Id,
                     BirthDate = i.BirthDate,
@@ -56,9 +59,9 @@ namespace TBCInsurance.Application.Services
                     Name = i.Name,
                     PersonNumber = i.PersonNumber,
                     Sex = i.Sex
-                });
+                }).GetPaged(obj.PageIndex, obj.PageSize);
 
-                return query.GetPaged(obj.PageIndex, obj.PageSize);
+                return res;
             }
             catch(Exception ex)
             {
@@ -81,8 +84,8 @@ namespace TBCInsurance.Application.Services
                 {
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
                 }
-                
-                
+
+
 
                 _studentRepository.Insert(student);
 
@@ -134,13 +137,13 @@ namespace TBCInsurance.Application.Services
                 }
 
 
-                var st=_studentRepository.GetById(student.Id);
+                var st = _studentRepository.GetById(student.Id);
                 st.Name = student.Name;
                 st.Sex = student.Sex;
                 st.BirthDate = student.BirthDate;
                 st.LastName = st.LastName;
                 st.PersonNumber = st.PersonNumber;
-                
+
                 _studentRepository.Update(st);
 
                 return true;

@@ -31,6 +31,8 @@ namespace TBCInsurance.Domain.Models
         public int PageSize { get; set; }
         public DateTime? BirthDate { get; set; }
         public string PersonNumber { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
 
         public override string ToString()
         {

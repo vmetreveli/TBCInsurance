@@ -25,7 +25,7 @@ namespace API.Controllers
         
         
         [HttpPost]
-        public PagedResult<StudentViewModel> FindStudents([FromForm] PageFilter filter)
+        public PagedResult<StudentViewModel> FindStudents([FromForm] string filter)
         {
 
             return _studentService.FindStudents(filter);
