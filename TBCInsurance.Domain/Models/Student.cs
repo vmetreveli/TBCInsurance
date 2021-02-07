@@ -16,7 +16,7 @@ namespace TBCInsurance.Domain.Models
         public string Name { get; set; }
         [Required]
         public string LastName { get; set; }
-        [Required]
+        //[Required]
         public DateTime BirthDate { get; set; }
         [Required]
         public  string Sex { get; set; }

@@ -74,3 +74,5 @@
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.API/obj/Debug/net5.0/ref/TBCInsurance.API.dll
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.pdb
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.genruntimeconfig.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.API/bin/Debug/net5.0/AutoMapper.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.API/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

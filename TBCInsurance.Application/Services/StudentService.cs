@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using AutoMapper;
 using Microsoft.Extensions.Logging;
 using TBCInsurance.Domain.Interfaces;
 using TBCInsurance.Application.Interfaces;
@@ -14,22 +15,24 @@ namespace TBCInsurance.Application.Services
     {
         private readonly IRepository<Student> _studentRepository;
         private readonly ILogger _logger;
-        public StudentService(IRepository<Student> studentRepository, ILogger<StudentService> logger)
+        private readonly IMapper _mapper;
+        public StudentService(IMapper mapper, IRepository<Student> studentRepository, ILogger<StudentService> logger)
         {
             _studentRepository = studentRepository;
             _logger = logger;
+            _mapper = mapper;
         }
 
         public IQueryable<StudentViewModel> GetStudents()
         {
             return _studentRepository.GetAll().Select(i => new StudentViewModel
             {
-                Id = i.Id,
-                BirthDate = i.BirthDate,
-                LastName = i.LastName,
-                Name = i.Name,
-                PersonNumber = i.PersonNumber,
-                Sex = i.Sex
+                id = i.Id,
+                birthDate = i.BirthDate.ToShortDateString(),
+                lastName = i.LastName,
+                name = i.Name,
+                personNumber = i.PersonNumber,
+                sex = i.Sex
             });
         }
         public PagedResult<StudentViewModel> FindStudents(string filter)
@@ -53,12 +56,12 @@ namespace TBCInsurance.Application.Services
 
                 var res = query.Select(i => new StudentViewModel
                 {
-                    Id = i.Id,
-                    BirthDate = i.BirthDate,
-                    LastName = i.LastName,
-                    Name = i.Name,
-                    PersonNumber = i.PersonNumber,
-                    Sex = i.Sex
+                    id = i.Id,
+                    birthDate = i.BirthDate.ToShortDateString(),
+                    lastName = i.LastName,
+                    name = i.Name,
+                    personNumber = i.PersonNumber,
+                    sex = i.Sex
                 }).GetPaged(obj.PageIndex, obj.PageSize);
 
                 return res;
@@ -74,20 +77,22 @@ namespace TBCInsurance.Application.Services
             try
             {
                 _logger.LogInformation($"AddStudent:");
+                var st = _mapper.Map<Student>(student);
 
-                if (_studentRepository.GetAll().Any(i => i.PersonNumber == student.PersonNumber))
+                if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
                 {
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
                 }
 
-                if ((DateTime.Today.Year - student.BirthDate.Year) < 16)
+                if ((DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year) < 16)
                 {
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
                 }
 
+            
+                
 
-
-                _studentRepository.Insert(student);
+                _studentRepository.Insert(st);
 
                 return true;
             }
@@ -109,6 +114,7 @@ namespace TBCInsurance.Application.Services
                 if (student != null)
                 {
                     _studentRepository.Delete(student);
+                    
                     return true;
                 }
 
@@ -125,26 +131,27 @@ namespace TBCInsurance.Application.Services
             try
             {
                 _logger.LogInformation($"AddStudent:");
+                var st = _mapper.Map<Student>(student);
 
-                if (_studentRepository.GetAll().Any(i => i.PersonNumber == student.PersonNumber))
+                if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
                 {
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
                 }
 
-                if ((DateTime.Today.Year - student.BirthDate.Year) < 16)
+                if ((DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year) < 16)
                 {
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
                 }
 
 
-                var st = _studentRepository.GetById(student.Id);
-                st.Name = student.Name;
-                st.Sex = student.Sex;
-                st.BirthDate = student.BirthDate;
+                var stud = _studentRepository.GetById(st.Id);
+                st.Name = st.Name;
+                st.Sex = st.Sex;
+                st.BirthDate = Convert.ToDateTime(st.BirthDate);
                 st.LastName = st.LastName;
                 st.PersonNumber = st.PersonNumber;
 
-                _studentRepository.Update(st);
+                _studentRepository.Update(stud);
 
                 return true;
             }

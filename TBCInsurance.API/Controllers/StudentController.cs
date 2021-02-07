@@ -24,20 +24,27 @@ namespace API.Controllers
         }
         
         
-        [HttpPost]
-        public PagedResult<StudentViewModel> FindStudents([FromForm] string filter)
-        {
-
-            return _studentService.FindStudents(filter);
-        } 
-        [HttpPut]
-        public bool AddStudent([FromForm] StudentViewModel student)
+        // [HttpPost]
+        // public PagedResult<StudentViewModel> FindStudents([FromForm] string filter)
+        // {
+        //
+        //     return _studentService.FindStudents(filter);
+        // } 
+        [HttpPost("AddStudent")]
+        public bool AddStudent(StudentViewModel student)
         {
 
             return _studentService.AddStudent(student);
         } 
         
-        [HttpDelete]
+        [HttpPut("UpdateStudent")]
+        public bool UpdateStudent(StudentViewModel student)
+        {
+
+            return _studentService.UpdateStudent(student);
+        } 
+        
+        [HttpDelete("RemoveStudent")]
         public bool RemoveStudent(int id)
         {
 

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "W/tASXGeSTdzfT7p1pPerHb2UGhbUc9yHCgPlUAyDxddWZM6GSEonKeOe17wueJDtc48blswE5XamoIa4dwIzA==",
+  "dgSpecHash": "TDGoX1y/iKZ3rhSQrtG3x7YZaHptaxQgNL68IidrrwPwsK2YT7PSALWIjQMCRzaLhNsrn1/GaAKnhjvfb+RHNA==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
   "expectedPackageFiles": [
+    "/Users/vmetreveli/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.data.sqlite.core/5.0.2/microsoft.data.sqlite.core.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.dotnet.platformabstractions/3.1.6/microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.entityframeworkcore/5.0.2/microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
@@ -30,7 +33,8 @@
     "/Users/vmetreveli/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "/Users/vmetreveli/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+    "/Users/vmetreveli/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
