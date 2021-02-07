@@ -20,7 +20,7 @@ namespace API
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -56,6 +56,12 @@ namespace API
 
             app.UseAuthorization();
 
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true)); // allow any origin
+            // .AllowCredentials()); // allow credentials
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

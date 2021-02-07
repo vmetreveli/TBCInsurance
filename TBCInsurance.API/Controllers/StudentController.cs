@@ -1,3 +1,4 @@
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using TBCInsurance.Application;
 using TBCInsurance.Application.Interfaces;
@@ -6,7 +7,7 @@ using TBCInsurance.Domain.Models;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class StudentController: ControllerBase
     {
         private readonly IStudentService _studentService;
@@ -16,11 +17,12 @@ namespace API.Controllers
             _studentService = studentService;
         }
         
-        [HttpGet]
-        public IActionResult Index()
+        [HttpGet("GetStudents")]
+        public IQueryable<StudentViewModel> GetStudents()
         {
-            return Ok("index");
+            return _studentService.GetStudents();
         }
+        
         
         [HttpPost]
         public PagedResult<StudentViewModel> FindStudents([FromForm] PageFilter filter)
