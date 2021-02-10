@@ -1237,11 +1237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
+      "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
       "projectName": "TBCInsurance.Infastructure.IoC",
-      "projectPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
+      "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
       "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-      "outputPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/obj/",
+      "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.IoC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -1256,11 +1256,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/TBCInsurance.Application.csproj": {
-              "projectPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/TBCInsurance.Application.csproj"
+            "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/TBCInsurance.Application.csproj": {
+              "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/TBCInsurance.Application.csproj"
             },
-            "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj": {
-              "projectPath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj"
+            "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj": {
+              "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj"
             }
           }
         }

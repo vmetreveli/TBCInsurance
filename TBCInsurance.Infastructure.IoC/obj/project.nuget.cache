@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TDGoX1y/iKZ3rhSQrtG3x7YZaHptaxQgNL68IidrrwPwsK2YT7PSALWIjQMCRzaLhNsrn1/GaAKnhjvfb+RHNA==",
+  "dgSpecHash": "TwJixAUqCcjGXIPmDuiqib0IAG3kvd5DP7uid1xXFRaZzzdf4Y+nw88e863izVym1qEdqCh+3ANkZVk+mWpe8Q==",
   "success": true,
-  "projectFilePath": "/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
+  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

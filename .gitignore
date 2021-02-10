@@ -1,0 +1,90 @@
+
+.idea/.idea.TBCInsurance/.idea/contentModel.xml
+.idea/.idea.TBCInsurance/.idea/indexLayout.xml
+.idea/.idea.TBCInsurance/.idea/modules.xml
+.idea/.idea.TBCInsurance/.idea/projectSettingsUpdater.xml
+.idea/.idea.TBCInsurance/.idea/riderModule.iml
+.idea/.idea.TBCInsurance/.idea/vcs.xml
+.idea/.idea.TBCInsurance/.idea/workspace.xml
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.API.dll
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.API.pdb
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Application.dll
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Application.pdb
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Infastructure.Data.dll
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Infastructure.Data.pdb
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Infastructure.IoC.dll
+TBCInsurance.API/bin/Debug/net5.0/TBCInsurance.Infastructure.IoC.pdb
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.assets.cache
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.csproj.CoreCompileInputs.cache
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.csproj.FileListAbsolute.txt
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.csprojAssemblyReference.cache
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.dll
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.genruntimeconfig.cache
+TBCInsurance.API/obj/Debug/net5.0/TBCInsurance.API.pdb
+TBCInsurance.API/obj/project.assets 3.json
+TBCInsurance.API/obj/project.assets.json
+TBCInsurance.API/obj/project.nuget 3.cache
+TBCInsurance.API/obj/project.nuget.cache
+TBCInsurance.API/obj/project.packagespec.json
+TBCInsurance.API/obj/rider.project.restore.info
+TBCInsurance.API/obj/TBCInsurance.API.csproj.nuget.dgspec 3.json
+TBCInsurance.API/obj/TBCInsurance.API.csproj.nuget.dgspec.json
+TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.dll
+TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.pdb
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.assets.cache
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CoreCompileInputs.cache
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.FileListAbsolute.txt
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csprojAssemblyReference.cache
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.dll
+TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.pdb
+TBCInsurance.Application/obj/project.assets 3.json
+TBCInsurance.Application/obj/project.assets.json
+TBCInsurance.Application/obj/project.nuget 3.cache
+TBCInsurance.Application/obj/project.nuget.cache
+TBCInsurance.Application/obj/project.packagespec.json
+TBCInsurance.Application/obj/rider.project.restore.info
+TBCInsurance.Application/obj/TBCInsurance.Application.csproj.nuget.dgspec 3.json
+TBCInsurance.Application/obj/TBCInsurance.Application.csproj.nuget.dgspec.json
+TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.assets.cache
+TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.csproj.FileListAbsolute.txt
+TBCInsurance.Domain/obj/Debug/netcoreapp3.1/TBCInsurance.Domain.csprojAssemblyReference.cache
+TBCInsurance.Domain/obj/project.assets.json
+TBCInsurance.Domain/obj/project.nuget.cache
+TBCInsurance.Domain/obj/project.packagespec.json
+TBCInsurance.Domain/obj/rider.project.restore.info
+TBCInsurance.Domain/obj/TBCInsurance.Domain.csproj.nuget.dgspec.json
+TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.dll
+TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.pdb
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.assets.cache
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csproj.CoreCompileInputs.cache
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csproj.FileListAbsolute.txt
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csprojAssemblyReference.cache
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.dll
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.genruntimeconfig.cache
+TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.pdb
+TBCInsurance.Infastructure.Data/obj/project.assets 3.json
+TBCInsurance.Infastructure.Data/obj/project.assets.json
+TBCInsurance.Infastructure.Data/obj/project.nuget.cache
+TBCInsurance.Infastructure.Data/obj/project.packagespec.json
+TBCInsurance.Infastructure.Data/obj/rider.project.restore.info
+TBCInsurance.Infastructure.Data/obj/TBCInsurance.Infastructure.Data.csproj.nuget.dgspec.json
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Application.dll
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Application.pdb
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Infastructure.Data.dll
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Infastructure.Data.pdb
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Infastructure.IoC.dll
+TBCInsurance.Infastructure.IoC/bin/Debug/net5.0/TBCInsurance.Infastructure.IoC.pdb
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.assets.cache
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.csproj.CoreCompileInputs.cache
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.csproj.FileListAbsolute.txt
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.csprojAssemblyReference.cache
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.dll
+TBCInsurance.Infastructure.IoC/obj/Debug/net5.0/TBCInsurance.Infastructure.IoC.pdb
+TBCInsurance.Infastructure.IoC/obj/project.assets 3.json
+TBCInsurance.Infastructure.IoC/obj/project.assets.json
+TBCInsurance.Infastructure.IoC/obj/project.nuget 3.cache
+TBCInsurance.Infastructure.IoC/obj/project.nuget.cache
+TBCInsurance.Infastructure.IoC/obj/project.packagespec.json
+TBCInsurance.Infastructure.IoC/obj/rider.project.restore.info
+TBCInsurance.Infastructure.IoC/obj/TBCInsurance.Infastructure.IoC.csproj.nuget.dgspec 3.json
+TBCInsurance.Infastructure.IoC/obj/TBCInsurance.Infastructure.IoC.csproj.nuget.dgspec.json

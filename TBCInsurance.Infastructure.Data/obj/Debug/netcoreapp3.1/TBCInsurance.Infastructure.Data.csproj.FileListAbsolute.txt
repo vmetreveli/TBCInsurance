@@ -13,3 +13,18 @@
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.dll
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.pdb
 /Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.genruntimeconfig.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.deps.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.runtimeconfig.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.runtimeconfig.dev.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/bin/Debug/netcoreapp3.1/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csprojAssemblyReference.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.AssemblyInfoInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.AssemblyInfo.cs
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.csproj.CopyComplete
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/obj/Debug/netcoreapp3.1/TBCInsurance.Infastructure.Data.genruntimeconfig.cache
