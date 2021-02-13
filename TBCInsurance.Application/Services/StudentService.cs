@@ -27,12 +27,12 @@ namespace TBCInsurance.Application.Services
         {
             return _studentRepository.GetAll().Select(i => new StudentViewModel
             {
-                id = i.Id,
-                birthDate = i.BirthDate.ToShortDateString(),
-                lastName = i.LastName,
-                name = i.Name,
-                personNumber = i.PersonNumber,
-                sex = i.Sex
+                Id = i.Id,
+                BirthDate = i.BirthDate.ToShortDateString(),
+                LastName = i.LastName,
+                Name = i.Name,
+                PersonNumber = i.PersonNumber,
+                Sex = i.Sex
             });
         }
         public PagedResult<StudentViewModel> FindStudents(string filter)
@@ -56,12 +56,12 @@ namespace TBCInsurance.Application.Services
 
                 var res = query.Select(i => new StudentViewModel
                 {
-                    id = i.Id,
-                    birthDate = i.BirthDate.ToShortDateString(),
-                    lastName = i.LastName,
-                    name = i.Name,
-                    personNumber = i.PersonNumber,
-                    sex = i.Sex
+                    Id = i.Id,
+                    BirthDate = i.BirthDate.ToShortDateString(),
+                    LastName = i.LastName,
+                    Name = i.Name,
+                    PersonNumber = i.PersonNumber,
+                    Sex = i.Sex
                 }).GetPaged(obj.PageIndex, obj.PageSize);
 
                 return res;
@@ -76,7 +76,7 @@ namespace TBCInsurance.Application.Services
         {
             try
             {
-                _logger.LogInformation($"AddStudent:");
+                _logger.LogInformation($"AddStudent:{student.ToString()}");
                 var st = _mapper.Map<Student>(student);
 
                 if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
@@ -88,9 +88,6 @@ namespace TBCInsurance.Application.Services
                 {
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
                 }
-
-            
-                
 
                 _studentRepository.Insert(st);
 
@@ -130,7 +127,7 @@ namespace TBCInsurance.Application.Services
         {
             try
             {
-                _logger.LogInformation($"AddStudent:");
+                _logger.LogInformation($"UpdateStudent:{student.ToString()}");
                 var st = _mapper.Map<Student>(student);
 
                 if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
