@@ -1,14 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using TBCInsurance.Domain.Models;
-
-namespace TBCInsurance.Domain.Interfaces
+namespace CleanArchitecture.Domain.Interfaces
 {
     public interface IRepository<T>
     {
-      //  IEnumerable<Student> GetStudents();
+        //  IEnumerable<Student> GetStudents();
         T Insert(T entity);
         void Delete(T entity);
         void Update(T entity);

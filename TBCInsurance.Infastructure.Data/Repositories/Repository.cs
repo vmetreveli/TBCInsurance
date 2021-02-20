@@ -1,18 +1,15 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using CleanArchitecture.Domain.Interfaces;
+using CleanArchitecture.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
-using TBCInsurance.Domain.Interfaces;
-using TBCInsurance.Domain.Models;
-using TBCInsurance.Infastructure.Data.Context;
-
-namespace TBCInsurance.Infastructure.Data.Repositories
+namespace CleanArchitecture.Infra.Data.Repositories
 {
-    public class Repository<T> :IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly DbSet<T> DbSet;
         private readonly DbContext _context;
+        private readonly DbSet<T> DbSet;
         public Repository(UniDbContext context)
         {
             _context = context;
@@ -58,9 +55,6 @@ namespace TBCInsurance.Infastructure.Data.Repositories
             return DbSet.Find(id);
         }
 
-
-
         #endregion
-    
     }
 }

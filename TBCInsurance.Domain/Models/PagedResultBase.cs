@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-
-namespace TBCInsurance.Domain.Models
+namespace CleanArchitecture.Domain.Models
 {
     public abstract class PagedResultBase
     {
@@ -17,12 +16,12 @@ namespace TBCInsurance.Domain.Models
 
     public class PagedResult<T> : PagedResultBase where T : class
     {
-        public IList<T> Results { get; set; }
 
         public PagedResult()
         {
             Results = new List<T>();
         }
+        public IList<T> Results { get; set; }
     }
 
     public class PageFilter

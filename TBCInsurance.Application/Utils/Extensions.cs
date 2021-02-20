@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using TBCInsurance.Domain.Models;
+using CleanArchitecture.Domain.Models;
 namespace TBCInsurance.Application.Utils
 {
     public static class Extensions
@@ -36,10 +35,6 @@ namespace TBCInsurance.Application.Utils
 
             return result;
         }
-
-      
-
-
     }
 
 

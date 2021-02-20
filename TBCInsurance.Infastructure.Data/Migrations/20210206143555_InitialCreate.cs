@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-
 namespace CleanArchitecture.Infra.Data.Migrations
 {
     public partial class InitialCreate : Migration
@@ -8,16 +7,16 @@ namespace CleanArchitecture.Infra.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Students",
-                columns: table => new
+                "Students",
+                table => new
                 {
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id = table.Column<int>("INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    PersonNumber = table.Column<string>(type: "TEXT", nullable: false),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
-                    LastName = table.Column<string>(type: "TEXT", nullable: false),
-                    BirthDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Sex = table.Column<string>(type: "TEXT", nullable: false)
+                    PersonNumber = table.Column<string>("TEXT", nullable: false),
+                    Name = table.Column<string>("TEXT", nullable: false),
+                    LastName = table.Column<string>("TEXT", nullable: false),
+                    BirthDate = table.Column<DateTime>("TEXT", nullable: false),
+                    Sex = table.Column<string>("TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,7 +27,7 @@ namespace CleanArchitecture.Infra.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Students");
+                "Students");
         }
     }
 }

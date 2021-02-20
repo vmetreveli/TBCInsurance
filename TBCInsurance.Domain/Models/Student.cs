@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
-
-namespace TBCInsurance.Domain.Models
+namespace CleanArchitecture.Domain.Models
 {
     public class Student
     {
-       [Key]
+        [Key]
         public int Id { get; set; }
         [Required]
         public string PersonNumber { get; set; }
@@ -19,8 +15,7 @@ namespace TBCInsurance.Domain.Models
         //[Required]
         public DateTime BirthDate { get; set; }
         [Required]
-        public  string Sex { get; set; }
-
+        public string Sex { get; set; }
     }
 
 }

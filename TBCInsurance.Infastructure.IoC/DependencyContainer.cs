@@ -1,11 +1,10 @@
-using TBCInsurance.Domain.Interfaces;
+using CleanArchitecture.Domain.Interfaces;
+using CleanArchitecture.Domain.Models;
+using CleanArchitecture.Infra.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using TBCInsurance.Application.Interfaces;
 using TBCInsurance.Application.Services;
 using TBCInsurance.Application.Utils;
-using TBCInsurance.Domain.Models;
-using TBCInsurance.Infastructure.Data.Repositories;
-
 namespace TBCInsurance.Infastructure.IoC
 {
     public class DependencyContainer
@@ -17,10 +16,10 @@ namespace TBCInsurance.Infastructure.IoC
 
             //CleanArchitecture.Domain.Interfaces | CleanArchitecture.Infra.Data.Repositories
             services.AddScoped<IRepository<Student>, Repository<Student>>();
-            
-          //  services.AddAutoMapper(typeof(DependencyContainer));
-            
-            services.AddAutoMapper(c=>c.AddProfile<AutoMapping>(), typeof(DependencyContainer));
-        }  
+
+            //  services.AddAutoMapper(typeof(DependencyContainer));
+
+            services.AddAutoMapper(c => c.AddProfile<AutoMapping>(), typeof(DependencyContainer));
+        }
     }
 }

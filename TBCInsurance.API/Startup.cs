@@ -1,16 +1,12 @@
+using CleanArchitecture.Infra.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using TBCInsurance.Infastructure.Data.Context;
 using TBCInsurance.Infastructure.IoC;
-
 namespace API
 {
     public class Startup
@@ -28,13 +24,13 @@ namespace API
             services.AddDbContext<UniDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
-            
+
             services.AddControllers();
-     
-        
+
+
             RegisterServices(services);
-            
-            
+
+
 
             services.AddSwaggerGen(c =>
             {
@@ -63,13 +59,14 @@ namespace API
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .SetIsOriginAllowed(origin => true)); // allow any origin
+
             // .AllowCredentials()); // allow credentials
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
         }
-        
+
         private static void RegisterServices(IServiceCollection services)
         {
             DependencyContainer.RegisterServices(services);

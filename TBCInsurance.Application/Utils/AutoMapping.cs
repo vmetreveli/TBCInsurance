@@ -1,7 +1,8 @@
-using TBCInsurance.Domain.Models;
+using AutoMapper;
+using CleanArchitecture.Domain.Models;
+using TBCInsurance.Application.ViewModels;
 namespace TBCInsurance.Application.Utils
 {
-    using AutoMapper;
     public class AutoMapping : Profile
     {
         public AutoMapping()

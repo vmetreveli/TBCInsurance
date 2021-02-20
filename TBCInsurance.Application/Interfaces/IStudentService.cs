@@ -1,10 +1,11 @@
 using System.Linq;
-using TBCInsurance.Domain.Models;
+using CleanArchitecture.Domain.Models;
+using TBCInsurance.Application.ViewModels;
 namespace TBCInsurance.Application.Interfaces
 {
     public interface IStudentService
     {
-        IQueryable<StudentViewModel> GetStudents(); 
+        IQueryable<StudentViewModel> GetStudents();
         PagedResult<StudentViewModel> FindStudents(string filter);
         bool AddStudent(StudentViewModel student);
         bool RemoveStudent(int id);
