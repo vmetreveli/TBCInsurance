@@ -4,29 +4,30 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using TBCInsurance.Application.Interfaces;
-using TBCInsurance.Application.ViewModels;
+using TBCInsurance.Application.Students.Dto;
+using TBCInsurance.Application.Students.Queries;
 namespace API.Controllers.v1
 {
-    [ApiVersion("1.0")]
-    [ApiController]
-   // [Route("api/[controller]")]
-    [Route("api/v{version:apiVersion}/[controller]")]
-    public class StudentController : ControllerBase
+
+    public class StudentController : ApiController
     {
         private readonly IStudentService _studentService;
         private IMediator _mediator;
-        protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
+        private IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
         public StudentController(IStudentService studentService)
         {
             _studentService = studentService;
+            //_mediator = mediator;
         }
 
         [HttpGet("GetStudents")]
-        public Task<IQueryable<StudentViewModel>> GetStudents()
+        public async Task<IQueryable<StudentDto>> GetStudents()
         {
             //_mediator.Send();
-            return _studentService.GetStudents();
+         //   return _studentService.GetStudents();
+        return await Mediator.Send(new GetAllStudentsQuery());
+
         }
 
 
@@ -37,14 +38,14 @@ namespace API.Controllers.v1
         //     return _studentService.FindStudents(filter);
         // }
         [HttpPost("AddStudent")]
-        public  Task<bool> AddStudent(StudentViewModel student)
+        public  Task<bool> AddStudent(StudentDto student)
         {
 
             return  _studentService.AddStudent(student);
         }
 
         [HttpPut("UpdateStudent")]
-        public  Task<bool> UpdateStudent(StudentViewModel student)
+        public  Task<bool> UpdateStudent(StudentDto student)
         {
             return _studentService.UpdateStudent(student);
         }

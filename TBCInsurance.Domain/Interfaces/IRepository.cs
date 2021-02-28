@@ -7,9 +7,9 @@ namespace CleanArchitecture.Domain.Interfaces
     public interface IRepository<T>
     {
         //  IEnumerable<Student> GetStudents();
-        Task<T> Insert(T entity);
-        Task<bool> Delete(T entity);
-        Task<bool> Update(T entity);
+        Task<T> Add(T entity);
+        Task<int> Delete(T entity);
+        Task<int> Update(T entity);
         Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate);
         Task<IQueryable<T>> GetAll();
         Task<T> GetById(int id);

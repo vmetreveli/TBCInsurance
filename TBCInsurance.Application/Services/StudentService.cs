@@ -7,8 +7,8 @@ using CleanArchitecture.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using TBCInsurance.Application.Interfaces;
+using TBCInsurance.Application.Students.Dto;
 using TBCInsurance.Application.Utils;
-using TBCInsurance.Application.ViewModels;
 namespace TBCInsurance.Application.Services
 {
     public class StudentService : IStudentService
@@ -24,9 +24,9 @@ namespace TBCInsurance.Application.Services
 
         }
 
-        public async Task<IQueryable<StudentViewModel>> GetStudents()
+        public async Task<IQueryable<StudentDto>> GetStudents()
         {
-            return _studentRepository.GetAll().Result.Select(i => new StudentViewModel
+            return _studentRepository.GetAll().Result.Select(i => new StudentDto
             {
                 id = i.Id,
                 birthDate = i.BirthDate.ToShortDateString(),
@@ -36,7 +36,7 @@ namespace TBCInsurance.Application.Services
                 sex = i.Sex
             });
         }
-        public async Task<PagedResult<StudentViewModel>> FindStudents(string filter)
+        public async Task<PagedResult<StudentDto>> FindStudents(string filter)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace TBCInsurance.Application.Services
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
 
-                var res = query.Result.Select(i => new StudentViewModel
+                var res = query.Result.Select(i => new StudentDto
                 {
                     id = i.Id,
                     birthDate = i.BirthDate.ToShortDateString(),
@@ -68,10 +68,10 @@ namespace TBCInsurance.Application.Services
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return new PagedResult<StudentViewModel>();
+                return new PagedResult<StudentDto>();
             }
         }
-        public async Task<bool> AddStudent(StudentViewModel student)
+        public async Task<bool> AddStudent(StudentDto student)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace TBCInsurance.Application.Services
 
 
 
-                _studentRepository.Insert(st);
+                _studentRepository.Add(st);
 
                 return true;
             }
@@ -121,7 +121,7 @@ namespace TBCInsurance.Application.Services
                 return false;
             }
         }
-        public async Task<bool> UpdateStudent(StudentViewModel student)
+        public async Task<bool> UpdateStudent(StudentDto student)
         {
             try
             {

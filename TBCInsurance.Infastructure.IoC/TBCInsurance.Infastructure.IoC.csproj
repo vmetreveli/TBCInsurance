@@ -15,4 +15,10 @@
       <ProjectReference Include="..\TBCInsurance.Infastructure.Data\TBCInsurance.Infastructure.Data.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="TBCInsurance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\TBCInsurance.API\bin\Debug\net5.0\TBCInsurance.Application.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

@@ -3,10 +3,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Interfaces;
-using CleanArchitecture.Infastructure.Data.Context;
+using CleanArchitecture.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
-
-namespace CleanArchitecture.Infastructure.Data.Repositories
+namespace CleanArchitecture.Infra.Data.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -19,26 +18,26 @@ namespace CleanArchitecture.Infastructure.Data.Repositories
         }
         #region IRepository<T> Members
 
-        public async Task<T> Insert(T entity)
+        public async Task<T> Add(T entity)
         {
             await DbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
 
-        public async Task<bool> Delete(T entity)
+        public async Task<int> Delete(T entity)
         {
-            DbSet.Remove(entity);
-             await _context.SaveChangesAsync();
-             return true;
+             DbSet.Remove(entity);
+             return await _context.SaveChangesAsync();
+
         }
 
-        public async Task<bool> Update(T entity)
+        public async Task<int> Update(T entity)
         {
             DbSet.Attach(entity);
             var entry = _context.Entry(entity);
-            await _context.SaveChangesAsync();
-            return true;
+            return await _context.SaveChangesAsync();
+
         }
 
         public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate)

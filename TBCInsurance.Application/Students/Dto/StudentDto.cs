@@ -1,7 +1,7 @@
 ﻿using MediatR;
-namespace TBCInsurance.Application.ViewModels
+namespace TBCInsurance.Application.Students.Dto
 {
-    public class StudentViewModel:IRequest
+    public class StudentDto:IRequest
     {
         // public IQueryable<Student> Students { get; set; }
 

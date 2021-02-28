@@ -12,7 +12,8 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "TBCInsurance.Application": "1.0.0",
-          "TBCInsurance.Infastructure.Data": "1.0.0"
+          "TBCInsurance.Infastructure.Data": "1.0.0",
+          "TBCInsurance.Application.Reference": "1.0.0.0"
         },
         "runtime": {
           "TBCInsurance.Infastructure.IoC.dll": {}
@@ -1167,21 +1168,6 @@
           }
         }
       },
-      "TBCInsurance.Application/1.0.0": {
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "MediatR": "9.0.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.2",
-          "Moq": "4.16.0",
-          "Newtonsoft.Json": "12.0.3",
-          "TBCInsurance.Domain": "1.0.0",
-          "xunit.extensibility.core": "2.4.1"
-        },
-        "runtime": {
-          "TBCInsurance.Application.dll": {}
-        }
-      },
       "TBCInsurance.Domain/1.0.0": {
         "dependencies": {
           "MediatR": "9.0.0",
@@ -1201,6 +1187,14 @@
         },
         "runtime": {
           "TBCInsurance.Infastructure.Data.dll": {}
+        }
+      },
+      "TBCInsurance.Application.Reference/1.0.0.0": {
+        "runtime": {
+          "TBCInsurance.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -2023,11 +2017,6 @@
       "path": "xunit.extensibility.core/2.4.1",
       "hashPath": "xunit.extensibility.core.2.4.1.nupkg.sha512"
     },
-    "TBCInsurance.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TBCInsurance.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -2035,6 +2024,11 @@
     },
     "TBCInsurance.Infastructure.Data/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TBCInsurance.Application.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
