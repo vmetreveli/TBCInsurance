@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZZ7OyrDirRnrTZ4XohRmgSFKzz9t9nZxJsspy0yG4gL8LVC3pBglpLC8xSvTPuFRRWXYV7xuniS/qxnS4f9Og==",
+  "dgSpecHash": "8F5Pmgs2L5v9i3gjkzCTGoqzkq56NwX/QGfMFmgPqfJh2fkZDwN1BZlcIDaOOl7rq3xiovYvCzFXEs9JsMeaNg==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.IoC/TBCInsurance.Infastructure.IoC.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.data.sqlite.core/5.0.2/microsoft.data.sqlite.core.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.dotnet.platformabstractions/3.1.6/microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "qFCCFfV/D1UnteZzw8wrN5HZQV94Pslxw0pBJcpDMzwQfj+4NDsDSngqN8cPkO6scNYpqP23OJ0kdqxd5JFH4A==",
+  "dgSpecHash": "3QhdExfAZA4NIKz2ZOasz1MCvoW6hK5OVCiFDPaW568xigmH3oeCImNuIyZqjUScnQSc9I3tGA13/QkrrjVt1w==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/TBCInsurance.Application.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.entityframeworkcore/5.0.2/microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.2/microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",

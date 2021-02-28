@@ -1,3 +1,4 @@
+using System.Reflection;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infra.Data.Repositories;
@@ -5,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TBCInsurance.Application.Interfaces;
 using TBCInsurance.Application.Services;
 using TBCInsurance.Application.Utils;
+using MediatR;
 namespace TBCInsurance.Infastructure.IoC
 {
     public class DependencyContainer
@@ -20,6 +22,8 @@ namespace TBCInsurance.Infastructure.IoC
             //  services.AddAutoMapper(typeof(DependencyContainer));
 
             services.AddAutoMapper(c => c.AddProfile<AutoMapping>(), typeof(DependencyContainer));
+            
+            services.AddMediatR(Assembly.GetExecutingAssembly());
         }
     }
 }

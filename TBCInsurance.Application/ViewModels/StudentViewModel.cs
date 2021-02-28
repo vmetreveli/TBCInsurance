@@ -1,6 +1,7 @@
-﻿namespace TBCInsurance.Application.ViewModels
+﻿using MediatR;
+namespace TBCInsurance.Application.ViewModels
 {
-    public class StudentViewModel
+    public class StudentViewModel:IRequest
     {
         // public IQueryable<Student> Students { get; set; }
 

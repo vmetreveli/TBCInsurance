@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "td1XkTuTguuRDsoxvaRNiz2Fir1zNLjYd85T7ujWYtj0sHOpfzk9TVHpMWnLhlPaOZsDSpvtOUmmrHeIZXIC2Q==",
+  "dgSpecHash": "E3dwQ477iXpLBufxyvbefplnZPC4CT7jte7EUOAi7eemKixQX6qd1MwYYN6/RkONfreUj8MDP5Zv8eGgcJKC/g==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/TBCInsurance.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.2/microsoft.aspnetcore.cryptography.internal.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/5.0.2/microsoft.aspnetcore.cryptography.keyderivation.5.0.2.nupkg.sha512",
@@ -17,6 +19,7 @@
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/5.0.2/microsoft.aspnetcore.identity.entityframeworkcore.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.identity.ui/5.0.2/microsoft.aspnetcore.identity.ui.5.0.2.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.0.0/microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.data.sqlite.core/5.0.2/microsoft.data.sqlite.core.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.dotnet.platformabstractions/3.1.6/microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

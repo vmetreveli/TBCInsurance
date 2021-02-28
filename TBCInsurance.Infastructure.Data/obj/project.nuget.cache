@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2DQmll80RKtmuwIzPODhztTZFsj6QUnXGv7ZKZ0G/2Ll9odGp+OKutew6heX70zsiZfMAMeCISi6qcaN9c7T4Q==",
+  "dgSpecHash": "5EDJhGe1r7vLeuzD0iE5DTY/YCd/kA3ZxZ0DZ2RB493eV6OwPH5Yd2Vs7/iYemJFnwJ/iW5NhsgUza+7pXYDsg==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.data.sqlite.core/5.0.2/microsoft.data.sqlite.core.5.0.2.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/microsoft.dotnet.platformabstractions/3.1.6/microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

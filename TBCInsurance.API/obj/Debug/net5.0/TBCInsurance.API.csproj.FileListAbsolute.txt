@@ -158,3 +158,6 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/Moq.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/xunit.abstractions.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/xunit.core.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/MediatR.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.API/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll
