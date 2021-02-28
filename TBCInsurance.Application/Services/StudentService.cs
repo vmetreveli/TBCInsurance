@@ -28,12 +28,12 @@ namespace TBCInsurance.Application.Services
         {
             return _studentRepository.GetAll().Result.Select(i => new StudentDto
             {
-                id = i.Id,
-                birthDate = i.BirthDate.ToShortDateString(),
-                lastName = i.LastName,
-                name = i.Name,
-                personNumber = i.PersonNumber,
-                sex = i.Sex
+                Id = i.Id,
+                //birthDate = i.BirthDate.ToShortDateString(),
+                LastName = i.LastName,
+                Name = i.Name,
+                PersonNumber = i.PersonNumber,
+                Sex = i.Sex
             });
         }
         public async Task<PagedResult<StudentDto>> FindStudents(string filter)
@@ -48,19 +48,19 @@ namespace TBCInsurance.Application.Services
 
                 var query = !string.IsNullOrEmpty(obj?.PersonNumber)
                     ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber ||
-                                                        i.BirthDate == obj.BirthDate ||
+                                                     //   i.BirthDate == obj.BirthDate ||
                                                         i.LastName == obj.LastName ||
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
 
                 var res = query.Result.Select(i => new StudentDto
                 {
-                    id = i.Id,
-                    birthDate = i.BirthDate.ToShortDateString(),
-                    lastName = i.LastName,
-                    name = i.Name,
-                    personNumber = i.PersonNumber,
-                    sex = i.Sex
+                    Id = i.Id,
+                    //birthDate = i.BirthDate.ToShortDateString(),
+                    LastName = i.LastName,
+                    Name = i.Name,
+                    PersonNumber = i.PersonNumber,
+                    Sex = i.Sex
                 }).GetPaged(obj.PageIndex, obj.PageSize);
 
                 return res;
@@ -81,8 +81,8 @@ namespace TBCInsurance.Application.Services
                 if (_studentRepository.GetAll().Result.Any(i => i.PersonNumber == st.PersonNumber))
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
 
-                if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
-                    throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
+                /*if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
+                    throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");*/
 
 
 
@@ -131,14 +131,14 @@ namespace TBCInsurance.Application.Services
                 if (_studentRepository.GetAll().Result.Any(i => i.PersonNumber == st.PersonNumber))
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
 
-                if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
-                    throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
+                // if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
+                //     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
 
 
                 var stud = _studentRepository.GetById(st.Id).Result;
                 st.Name = st.Name;
                 st.Sex = st.Sex;
-                st.BirthDate = Convert.ToDateTime(st.BirthDate);
+              //  st.BirthDate = Convert.ToDateTime(st.BirthDate);
                 st.LastName = st.LastName;
                 st.PersonNumber = st.PersonNumber;
 

@@ -29,7 +29,7 @@ namespace API
 
             services.AddControllers();
 
-
+           // services.AddMediatR(typeof(Startup));
             RegisterServices(services);
 
 
@@ -89,7 +89,7 @@ namespace API
 
         private static void RegisterServices(IServiceCollection services)
         {
-            DependencyContainer.RegisterServices(services);
+            services.RegisterServices();
         }
     }
 }

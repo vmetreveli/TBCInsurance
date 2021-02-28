@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
@@ -13,20 +14,27 @@ namespace API.Controllers.v1
     {
         private readonly IStudentService _studentService;
         private IMediator _mediator;
-        private IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
+       // private IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
-        public StudentController(IStudentService studentService)
+        public StudentController(IStudentService studentService, IMediator mediator)
         {
             _studentService = studentService;
-            //_mediator = mediator;
+            _mediator = mediator;
         }
 
         [HttpGet("GetStudents")]
-        public async Task<IQueryable<StudentDto>> GetStudents()
+        public async Task<IEnumerable<StudentDto>> GetStudents()
         {
             //_mediator.Send();
          //   return _studentService.GetStudents();
-        return await Mediator.Send(new GetAllStudentsQuery());
+     var r= await _mediator.Send(new GetAllStudentsQuery());
+      
+      return r;
+      /*var student = await _mediator.Send(new GetAllStudentsQuery());
+      if (student == null) {
+          return NotFound();
+      }
+      return Ok(student);*/
 
         }
 

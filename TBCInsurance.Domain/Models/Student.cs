@@ -13,7 +13,7 @@ namespace CleanArchitecture.Domain.Models
         [Required]
         public string LastName { get; set; }
         //[Required]
-        public DateTime BirthDate { get; set; }
+        //public DateTime BirthDate { get; set; }
         [Required]
         public string Sex { get; set; }
     }

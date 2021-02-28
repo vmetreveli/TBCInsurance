@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5EDJhGe1r7vLeuzD0iE5DTY/YCd/kA3ZxZ0DZ2RB493eV6OwPH5Yd2Vs7/iYemJFnwJ/iW5NhsgUza+7pXYDsg==",
+  "dgSpecHash": "ZfCB2Oi8lnz2xEH+C7Bzqwkw8K7x9bMsiVmIKl7mW82H8yuIu9uw5t9y2qp6jN2CmhPN5mXD8HrkWAU/NtarWQ==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Infastructure.Data/TBCInsurance.Infastructure.Data.csproj",
   "expectedPackageFiles": [
@@ -35,9 +35,7 @@
     "/Users/vmetreveli/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "/Users/vmetreveli/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
-    "/Users/vmetreveli/.nuget/packages/system.text.encodings.web/5.0.0/system.text.encodings.web.5.0.0.nupkg.sha512",
-    "/Users/vmetreveli/.nuget/packages/system.text.json/5.0.0/system.text.json.5.0.0.nupkg.sha512"
+    "/Users/vmetreveli/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }
