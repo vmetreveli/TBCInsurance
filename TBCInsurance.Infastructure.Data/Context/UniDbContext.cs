@@ -1,6 +1,6 @@
 ﻿using CleanArchitecture.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-namespace CleanArchitecture.Infra.Data.Context
+namespace CleanArchitecture.Infastructure.Data.Context
 {
     public class UniDbContext : DbContext
     {

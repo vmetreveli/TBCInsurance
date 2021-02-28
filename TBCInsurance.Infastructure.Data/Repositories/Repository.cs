@@ -3,9 +3,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Interfaces;
-using CleanArchitecture.Infra.Data.Context;
+using CleanArchitecture.Infastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
-namespace CleanArchitecture.Infra.Data.Repositories
+
+namespace CleanArchitecture.Infastructure.Data.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {

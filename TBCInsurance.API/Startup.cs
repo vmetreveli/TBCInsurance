@@ -1,4 +1,4 @@
-using CleanArchitecture.Infra.Data.Context;
+using CleanArchitecture.Infastructure.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -37,7 +37,7 @@ namespace API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TBCInsurance.API", Version = "v1" });
             });
-            
+
             #region Api Versioning
 
             // Add API Versioning to the Project
@@ -45,7 +45,7 @@ namespace API
             {
                 // Specify the default API Version as 1.0
                 config.DefaultApiVersion = new ApiVersion(1, 0);
-                // If the client hasn't specified the API version in the request, use the default API version number 
+                // If the client hasn't specified the API version in the request, use the default API version number
                 config.AssumeDefaultVersionWhenUnspecified = true;
                 // Advertise the API versions supported for the particular endpoint
                 config.ReportApiVersions = true;
