@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
@@ -20,10 +21,10 @@ namespace TBCInsurance.Application.Services
             _studentRepository = studentRepository;
             _logger = logger;
             _mapper = mapper;
-           
+
         }
 
-        public IQueryable<StudentViewModel> GetStudents()
+        public async Task<IQueryable<StudentViewModel>> GetStudents()
         {
             return _studentRepository.GetAll().Select(i => new StudentViewModel
             {
@@ -35,7 +36,7 @@ namespace TBCInsurance.Application.Services
                 sex = i.Sex
             });
         }
-        public PagedResult<StudentViewModel> FindStudents(string filter)
+        public async Task<PagedResult<StudentViewModel>> FindStudents(string filter)
         {
             try
             {
@@ -70,7 +71,7 @@ namespace TBCInsurance.Application.Services
                 return new PagedResult<StudentViewModel>();
             }
         }
-        public bool AddStudent(StudentViewModel student)
+        public async Task<bool> AddStudent(StudentViewModel student)
         {
             try
             {
@@ -96,7 +97,7 @@ namespace TBCInsurance.Application.Services
                 return false;
             }
         }
-        public bool RemoveStudent(int id)
+        public async Task<bool> RemoveStudent(int id)
         {
             try
             {
@@ -120,7 +121,7 @@ namespace TBCInsurance.Application.Services
                 return false;
             }
         }
-        public bool UpdateStudent(StudentViewModel student)
+        public async Task<bool> UpdateStudent(StudentViewModel student)
         {
             try
             {
