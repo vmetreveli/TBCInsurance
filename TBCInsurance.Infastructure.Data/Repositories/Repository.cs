@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
@@ -17,42 +18,44 @@ namespace CleanArchitecture.Infra.Data.Repositories
         }
         #region IRepository<T> Members
 
-        public T Insert(T entity)
+        public async Task<T> Insert(T entity)
         {
-            DbSet.Add(entity);
-            _context.SaveChanges();
+            await DbSet.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 
-        public void Delete(T entity)
+        public async Task<bool> Delete(T entity)
         {
             DbSet.Remove(entity);
-            _context.SaveChanges();
+             await _context.SaveChangesAsync();
+             return true;
         }
 
-        public void Update(T entity)
+        public async Task<bool> Update(T entity)
         {
             DbSet.Attach(entity);
             var entry = _context.Entry(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public IQueryable<T> SearchFor(Expression<Func<T, bool>> predicate)
+        public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate)
         {
             return DbSet.Where(predicate);
         }
 
-        public IQueryable<T> GetAll()
+        public async Task<IQueryable<T>> GetAll()
         {
             return DbSet;
         }
 
-        public T GetById(int id)
+        public async Task<T> GetById(int id)
         {
             // Beware the == operator throws NotSupported Exception!
             // 'The Mapping of Interface Member is not supported'
             // Use .Equals() instead
-            return DbSet.Find(id);
+            return await DbSet.FindAsync(id);
         }
 
         #endregion

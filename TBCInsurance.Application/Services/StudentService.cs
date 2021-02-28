@@ -26,7 +26,7 @@ namespace TBCInsurance.Application.Services
 
         public async Task<IQueryable<StudentViewModel>> GetStudents()
         {
-            return _studentRepository.GetAll().Select(i => new StudentViewModel
+            return _studentRepository.GetAll().Result.Select(i => new StudentViewModel
             {
                 id = i.Id,
                 birthDate = i.BirthDate.ToShortDateString(),
@@ -53,7 +53,7 @@ namespace TBCInsurance.Application.Services
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
 
-                var res = query.Select(i => new StudentViewModel
+                var res = query.Result.Select(i => new StudentViewModel
                 {
                     id = i.Id,
                     birthDate = i.BirthDate.ToShortDateString(),
@@ -78,7 +78,7 @@ namespace TBCInsurance.Application.Services
                 _logger.LogInformation("AddStudent:");
                 var st = _mapper.Map<Student>(student);
 
-                if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
+                if (_studentRepository.GetAll().Result.Any(i => i.PersonNumber == st.PersonNumber))
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
 
                 if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
@@ -104,7 +104,7 @@ namespace TBCInsurance.Application.Services
                 _logger.LogInformation($"RemoveStudent:{id}");
 
 
-                var student = _studentRepository.GetById(id);
+                var student = _studentRepository.GetById(id).Result;
 
                 if (student != null)
                 {
@@ -128,14 +128,14 @@ namespace TBCInsurance.Application.Services
                 _logger.LogInformation("AddStudent:");
                 var st = _mapper.Map<Student>(student);
 
-                if (_studentRepository.GetAll().Any(i => i.PersonNumber == st.PersonNumber))
+                if (_studentRepository.GetAll().Result.Any(i => i.PersonNumber == st.PersonNumber))
                     throw new Exception("ესეთი სტუდენტი უკვე არსებობს");
 
                 if (DateTime.Today.Year - Convert.ToDateTime(st.BirthDate).Year < 16)
                     throw new Exception("ესეთი სტუდენტი დამატება დაუშვებელია");
 
 
-                var stud = _studentRepository.GetById(st.Id);
+                var stud = _studentRepository.GetById(st.Id).Result;
                 st.Name = st.Name;
                 st.Sex = st.Sex;
                 st.BirthDate = Convert.ToDateTime(st.BirthDate);

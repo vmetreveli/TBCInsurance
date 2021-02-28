@@ -14,8 +14,8 @@ namespace API.Controllers.v1
     public class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;
-        //private IMediator _mediator;
-       // protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
+        private IMediator _mediator;
+        protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
         public StudentController(IStudentService studentService)
         {
@@ -25,7 +25,7 @@ namespace API.Controllers.v1
         [HttpGet("GetStudents")]
         public Task<IQueryable<StudentViewModel>> GetStudents()
         {
-
+            //_mediator.Send();
             return _studentService.GetStudents();
         }
 
