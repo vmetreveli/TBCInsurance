@@ -1,0 +1,24 @@
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.deps.json
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/bin/Debug/net5.0/ref/TBCInsurance.Domain.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.csprojAssemblyReference.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.AssemblyInfoInputs.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.AssemblyInfo.cs
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.csproj.CoreCompileInputs.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/ref/TBCInsurance.Domain.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.deps.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/bin/Debug/net5.0/ref/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.csprojAssemblyReference.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.AssemblyInfoInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.AssemblyInfo.cs
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/ref/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Domain/obj/Debug/net5.0/TBCInsurance.Domain.pdb

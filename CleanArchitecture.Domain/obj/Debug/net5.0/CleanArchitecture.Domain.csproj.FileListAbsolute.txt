@@ -1,0 +1,12 @@
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.deps.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/bin/Debug/net5.0/ref/CleanArchitecture.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.csprojAssemblyReference.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.AssemblyInfoInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.AssemblyInfo.cs
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/ref/CleanArchitecture.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.pdb
