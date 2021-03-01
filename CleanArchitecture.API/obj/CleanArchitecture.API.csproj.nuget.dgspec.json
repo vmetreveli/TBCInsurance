@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/CleanArchitecture.API.csproj": {}
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj": {}
   },
   "projects": {
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/CleanArchitecture.API.csproj": {
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/CleanArchitecture.API.csproj",
+        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj",
         "projectName": "CleanArchitecture.API",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/CleanArchitecture.API.csproj",
+        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj",
         "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/obj/",
+        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj": {
-                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj"
+              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj": {
+                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj"
               }
             }
           }
@@ -117,14 +117,14 @@
         }
       }
     },
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
         "projectName": "CleanArchitecture.Application",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
         "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/obj/",
+        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -139,8 +139,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
-                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
+              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
               }
             }
           }
@@ -203,14 +203,14 @@
         }
       }
     },
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
         "projectName": "CleanArchitecture.Domain",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
         "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/",
+        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -265,14 +265,14 @@
         }
       }
     },
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj": {
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
+        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
         "projectName": "CleanArchitecture.Infastructure.Data",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
+        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
         "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/obj/",
+        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -287,8 +287,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
-                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
+              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
               }
             }
           }
@@ -355,14 +355,14 @@
         }
       }
     },
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj": {
+    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj",
+        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj",
         "projectName": "CleanArchitecture.Infastructure.IoC",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj",
+        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj",
         "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/obj/",
+        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
@@ -377,11 +377,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
-                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
               },
-              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj": {
-                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj"
+              "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj": {
+                "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj"
               }
             }
           }

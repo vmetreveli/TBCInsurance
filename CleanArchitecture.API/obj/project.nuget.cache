@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3tUso/zn3uS88GJDjqaOt0wS2+hRLJ6lB2OoS1yROc0VWEHamj/cglv4NvmGIipSiuuzt6MohJSQZYX/n9VSQw==",
+  "dgSpecHash": "+XOwRDCcteCdqxwSshjXCcZoF49FVs57cO2ge0ULgXZ+bog1RLCdx3mpZ4ILq7+H7IYEF70M++sA6isAbSR8lw==",
   "success": true,
-  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.API/CleanArchitecture.API.csproj",
+  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

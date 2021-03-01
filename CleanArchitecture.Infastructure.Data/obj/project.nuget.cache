@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pbGtHNpK+AGXqEby/NBntAWekEvRHjFa3Rhe7iLgfRWyLCWYpo7+teEhRpMc9qwj64Nx3ZAAQO7A05FQ2yfQcQ==",
+  "dgSpecHash": "76F2ygRr/zaETmJnbcDjnOKT60B9+F3//ee0Dbu7ifmSJyXERVE804cxnHKBSwAbJkzY1a6mf1pHg85/M0Xlig==",
   "success": true,
-  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
+  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.Data/CleanArchitecture.Infastructure.Data.csproj",
   "expectedPackageFiles": [
     "/Users/vmetreveli/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
