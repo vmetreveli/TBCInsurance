@@ -27,7 +27,9 @@ namespace CleanArchitecture.Application.Services
 
         public async Task<IQueryable<StudentDto>> GetStudents()
         {
+
             return _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
+
         }
 
         public async Task<PagedResult<StudentDto>> FindStudents(string filter)
@@ -41,16 +43,13 @@ namespace CleanArchitecture.Application.Services
                 if (!string.IsNullOrEmpty(filter)) obj = JsonConvert.DeserializeObject<PageFilter>(filter);
 
                 var query = !string.IsNullOrEmpty(obj?.PersonNumber)
-                    ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber ||
-                                                        //   i.BirthDate == obj.BirthDate ||
-                                                        i.LastName == obj.LastName ||
+                    ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber || i.LastName == obj.LastName ||
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
 
-                var res = query.Result.Select(i => _mapper.Map(i, new StudentDto()))
+                return query.Result.Select(i => _mapper.Map(i, new StudentDto()))
                     .GetPaged(obj.PageIndex, obj.PageSize);
 
-                return res;
             }
             catch (Exception ex)
             {
@@ -126,7 +125,6 @@ namespace CleanArchitecture.Application.Services
                 var stud = _studentRepository.GetById(st.Id).Result;
                 st.Name = st.Name;
                 st.Sex = st.Sex;
-                //  st.BirthDate = Convert.ToDateTime(st.BirthDate);
                 st.LastName = st.LastName;
                 st.PersonNumber = st.PersonNumber;
 
@@ -141,9 +139,10 @@ namespace CleanArchitecture.Application.Services
             }
         }
 
-        public Task<StudentDto> GetStudentById(int id)
+        public async Task<StudentDto> GetStudentById(int id)
         {
-            throw new NotImplementedException();
+            var student = _studentRepository.GetById(id).Result;
+            return _mapper.Map(student, new StudentDto());
         }
     }
 }

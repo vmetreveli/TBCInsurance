@@ -8,8 +8,8 @@ using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infra.Data.Repositories;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace CleanArchitecture.Infastructure.IoC
+
 {
     public static class DependencyContainer
     {
@@ -27,6 +27,9 @@ namespace CleanArchitecture.Infastructure.IoC
 
             services.AddMediatR(typeof(GetAllStudentsQuery));
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            //services.AddMediatR(typeof(Startup));
+          //  services.AddMediatR(typeof(TBCInsurance.Application).GetTypeInfo().Assembly);
 
             //services.AddMediatR(typeof(Startup));
           //  services.AddMediatR(typeof(CleanArchitecture.Application).GetTypeInfo().Assembly);

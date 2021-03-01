@@ -16,6 +16,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
             _context = context;
             DbSet = _context.Set<T>();
         }
+
         #region IRepository<T> Members
 
         public async Task<T> Add(T entity)

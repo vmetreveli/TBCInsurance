@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tDdwEh6t8VysBa8pbLKJZoO2N7AZ1cQ8APRhFdlKbWXwaC6nsbPQptQokk2gt9YbnMazjJYQi6HBGPrL8PCqoQ==",
+  "dgSpecHash": "qIDLot485W59kWL3jhKm9rlsgalTPVy8Usq7GKBCnia6E4w9xlDy+MSc7DXq97OGIZZuXY0h5C9jslWekSMOTw==",
   "success": true,
   "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj",
   "expectedPackageFiles": [

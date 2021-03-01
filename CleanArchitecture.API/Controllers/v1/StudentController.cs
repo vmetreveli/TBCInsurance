@@ -28,9 +28,9 @@ namespace API.Controllers.v1
         {
             //_mediator.Send();
          //   return _studentService.GetStudents();
-     var r= await _mediator.Send(new GetAllStudentsQuery());
+return await _mediator.Send(new GetAllStudentsQuery());
 
-      return r;
+
       /*var student = await _mediator.Send(new GetAllStudentsQuery());
       if (student == null) {
           return NotFound();
