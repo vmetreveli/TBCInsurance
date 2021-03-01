@@ -1,0 +1,45 @@
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.deps.json
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csprojAssemblyReference.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfoInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfo.cs
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CopyComplete
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Desktop/CleanArchitectureDemo/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.pdb
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.deps.json
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/ref/TBCInsurance.Application.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.pdb
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csprojAssemblyReference.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfoInputs.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfo.cs
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CoreCompileInputs.cache
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CopyComplete
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/ref/TBCInsurance.Application.dll
+C:/Users/V.METREVELI/Desktop/TBCInsurance-fluent/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.deps.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Application.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/bin/Debug/net5.0/TBCInsurance.Domain.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csprojAssemblyReference.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfoInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.AssemblyInfo.cs
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CoreCompileInputs.cache
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.csproj.CopyComplete
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/ref/TBCInsurance.Application.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/TBCInsurance.Application/obj/Debug/net5.0/TBCInsurance.Application.pdb

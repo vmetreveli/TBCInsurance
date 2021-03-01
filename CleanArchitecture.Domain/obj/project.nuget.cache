@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "r6fF+qtcKH5S4/2hfeyPBlluJUNarDRrxYOKtIwTOkgvEK6lB7+pAjp9VLXseV8oo/Yn9NADZHxAVwvMkHxzLA==",
+  "success": true,
+  "projectFilePath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/vmetreveli/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "/Users/vmetreveli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.0.0/microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
