@@ -1,3 +1,3 @@
-# TBCInsurance
+# CleanArchitecture
 
 Clean Architecture .NET Core
