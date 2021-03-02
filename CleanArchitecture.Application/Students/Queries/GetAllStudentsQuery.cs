@@ -1,11 +1,9 @@
-using System.Collections.Generic;
 using System.Linq;
-using MediatR;
 using CleanArchitecture.Application.Students.Dto;
+using MediatR;
 namespace CleanArchitecture.Application.Students.Queries
 {
-    public class GetAllStudentsQuery:  IRequest<IQueryable<StudentDto>>
+    public class GetAllStudentsQuery : IRequest<IQueryable<StudentDto>>
     {
-
     }
 }

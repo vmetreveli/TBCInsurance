@@ -29,10 +29,10 @@ namespace CleanArchitecture.Infastructure.IoC
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             //services.AddMediatR(typeof(Startup));
-          //  services.AddMediatR(typeof(TBCInsurance.Application).GetTypeInfo().Assembly);
+            //  services.AddMediatR(typeof(TBCInsurance.Application).GetTypeInfo().Assembly);
 
             //services.AddMediatR(typeof(Startup));
-          //  services.AddMediatR(typeof(CleanArchitecture.Application).GetTypeInfo().Assembly);
+            //  services.AddMediatR(typeof(CleanArchitecture.Application).GetTypeInfo().Assembly);
 
 
         }

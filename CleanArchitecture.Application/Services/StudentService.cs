@@ -2,14 +2,13 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using CleanArchitecture.Application.Interfaces;
+using CleanArchitecture.Application.Students.Dto;
+using CleanArchitecture.Application.Utils;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Application.Students.Dto;
-using CleanArchitecture.Application.Utils;
-
 namespace CleanArchitecture.Application.Services
 {
     public class StudentService : IStudentService
@@ -25,12 +24,8 @@ namespace CleanArchitecture.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IQueryable<StudentDto>> GetStudents()
-        {
-
-            return _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
-
-        }
+        public async Task<IQueryable<StudentDto>> GetStudents() =>
+            _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
 
         public async Task<PagedResult<StudentDto>> FindStudents(string filter)
         {
@@ -51,7 +46,7 @@ namespace CleanArchitecture.Application.Services
                     .GetPaged(obj.PageIndex, obj.PageSize);
 
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
                 return new PagedResult<StudentDto>();
@@ -76,7 +71,7 @@ namespace CleanArchitecture.Application.Services
 
                 return true;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
                 return false;
@@ -101,7 +96,7 @@ namespace CleanArchitecture.Application.Services
 
                 return false;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
                 return false;
@@ -132,7 +127,7 @@ namespace CleanArchitecture.Application.Services
 
                 return true;
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
                 return false;

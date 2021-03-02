@@ -1,20 +1,17 @@
-﻿using System;
-using CleanArchitecture.Domain.Models;
-using MediatR;
-namespace CleanArchitecture.Application.Students.Dto
+﻿namespace CleanArchitecture.Application.Students.Dto
 {
 
     public class StudentDto
     {
 
-       public int Id { get; set; }
+        public int Id { get; set; }
 
-       public string PersonNumber { get; set; }
+        public string PersonNumber { get; set; }
 
-       public string Name { get; set; }
+        public string Name { get; set; }
 
-       public string LastName { get; set; }
+        public string LastName { get; set; }
 
-       public string Sex { get; set; }
+        public string Sex { get; set; }
     }
 }
