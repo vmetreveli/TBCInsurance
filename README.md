@@ -1,3 +1,3 @@
-# TBCInsurance
+# Clean Architecture
 
-Clean Architecture .NET Core
+Onion Architecture .Net Core

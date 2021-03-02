@@ -12,12 +12,12 @@ namespace CleanArchitecture.Application.Students.Handlers
     public class GetStudentByIdQueryHandler: IRequestHandler<GetStudentByIdQuery, StudentDto>
     {
         private readonly IStudentService _service;
-        private readonly IMapper _mapper;
 
-        public GetStudentByIdQueryHandler(IStudentService service, IMapper mapper)
+
+        public GetStudentByIdQueryHandler(IStudentService service)
         {
             _service = service;
-            _mapper = mapper;
+
         }
         public async Task<StudentDto> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
         {

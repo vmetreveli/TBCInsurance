@@ -28,7 +28,7 @@ namespace CleanArchitecture.Domain.Models
     {
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
-        public DateTime? BirthDate { get; set; }
+        private DateTime? BirthDate { get; set; }
         public string PersonNumber { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
