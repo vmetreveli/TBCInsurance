@@ -89,9 +89,9 @@ namespace CleanArchitecture.Application.Services
                 var student = _studentRepository.GetById(id).Result;
                 if (student == null) return default;
 
-                    await _studentRepository.Delete(student);
+                await _studentRepository.Delete(student);
 
-                    return id;
+                return id;
 
             }
             catch(Exception ex)
@@ -128,7 +128,7 @@ namespace CleanArchitecture.Application.Services
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
-           throw;
+                throw;
             }
         }
 

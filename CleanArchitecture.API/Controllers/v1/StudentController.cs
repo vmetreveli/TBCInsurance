@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Students.Commands;
@@ -11,14 +10,12 @@ namespace API.Controllers.v1
 
     public class StudentController : ApiController
     {
-        private readonly IStudentService _studentService;
 
         private readonly IMediator _mediator;
+        private readonly IStudentService _studentService;
 
-        public StudentController(IMediator mediator)
-        {
+        public StudentController(IMediator mediator) =>
             _mediator = mediator;
-        }
 
         [HttpGet("GetStudents")]
         public async Task<IActionResult> GetStudents() =>
@@ -30,10 +27,10 @@ namespace API.Controllers.v1
 
         [HttpPut("UpdateStudent")]
         public async Task<IActionResult> UpdateStudent(StudentDto student) =>
-            Ok(_mediator.Send(new UpdateStudentCommand { Student = student}));
+            Ok(_mediator.Send(new UpdateStudentCommand { Student = student }));
 
         [HttpDelete("RemoveStudent")]
-        public  async Task<IActionResult> RemoveStudent(int id) =>
+        public async Task<IActionResult> RemoveStudent(int id) =>
             Ok(_mediator.Send(new DeleteStudentCommand { Id = id }));
     }
 }

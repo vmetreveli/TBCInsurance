@@ -5,15 +5,14 @@ using CleanArchitecture.Application.Students.Commands;
 using MediatR;
 namespace CleanArchitecture.Application.Students.Handlers
 {
-    public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, int>
+    public class DeleteStudentCommandHandler : IRequestHandler<DeleteStudentCommand, int>
     {
         private readonly IStudentService _service;
 
-        public CreateStudentCommandHandler(IStudentService service) =>
+        public DeleteStudentCommandHandler(IStudentService service) =>
             _service = service;
 
-        public async Task<int> Handle(CreateStudentCommand request, CancellationToken cancellationToken)=>
-            await _service.AddStudent(request.Students);
-
+        public async Task<int> Handle(DeleteStudentCommand request, CancellationToken cancellationToken) =>
+            await _service.RemoveStudent(request.Id);
     }
 }
