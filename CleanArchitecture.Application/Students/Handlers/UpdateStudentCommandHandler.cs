@@ -9,15 +9,13 @@ namespace CleanArchitecture.Application.Students.Handlers
 {
     public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, bool>
     {
-        private readonly IMapper _mapper;
-        private readonly IStudentService _service;
-        public UpdateStudentCommandHandler(IStudentService service, IMapper mapper)
+     private readonly IStudentService _service;
+        public UpdateStudentCommandHandler(IStudentService service)
         {
             _service = service;
-            _mapper = mapper;
 
         }
         public async Task<bool> Handle(UpdateStudentCommand request, CancellationToken cancellationToken) =>
-            await _service.UpdateStudent(_mapper.Map<StudentDto>(request));
+            await _service.UpdateStudent(request.Student);
     }
 }

@@ -14,7 +14,7 @@ namespace CleanArchitecture.Application.Students.Handlers
 
         public async Task<bool> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
         {
-            var result = await _service.RemoveStudent(request.Student.Id);
+            var result = await _service.RemoveStudent(request.Id);
             return result;
         }
     }

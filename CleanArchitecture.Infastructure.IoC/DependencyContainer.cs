@@ -21,18 +21,12 @@ namespace CleanArchitecture.Infastructure.IoC
             //CleanArchitecture.Domain.Interfaces | CleanArchitecture.Infra.Data.Repositories
             services.AddScoped<IRepository<Student>, Repository<Student>>();
 
-            //  services.AddAutoMapper(typeof(DependencyContainer));
-
-            services.AddAutoMapper(c => c.AddProfile<StudentMappingProfile>(), typeof(DependencyContainer));
+            services.AddAutoMapper(c => c.AddProfile<StudentMappingProfile>(),
+                typeof(DependencyContainer));
 
             services.AddMediatR(typeof(GetAllStudentsQuery));
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            //services.AddMediatR(typeof(Startup));
-            //  services.AddMediatR(typeof(TBCInsurance.Application).GetTypeInfo().Assembly);
-
-            //services.AddMediatR(typeof(Startup));
-            //  services.AddMediatR(typeof(CleanArchitecture.Application).GetTypeInfo().Assembly);
 
 
         }

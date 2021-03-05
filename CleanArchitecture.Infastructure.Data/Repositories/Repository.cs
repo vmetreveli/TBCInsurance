@@ -36,7 +36,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
         public async Task<int> Update(T entity)
         {
             DbSet.Attach(entity);
-            var entry = _context.Entry(entity);
+            _context.Entry(entity);
             return await _context.SaveChangesAsync();
 
         }

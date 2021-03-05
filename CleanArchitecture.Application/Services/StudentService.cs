@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 namespace CleanArchitecture.Application.Services
 {
+
     public class StudentService : IStudentService
     {
         private readonly ILogger _logger;
@@ -107,7 +108,7 @@ namespace CleanArchitecture.Application.Services
         {
             try
             {
-                _logger.LogInformation("AddStudent:");
+                _logger.LogInformation("Uppdate Student:");
                 var st = _mapper.Map<Student>(student);
 
                 if (_studentRepository.GetAll().Result.Any(i => i.PersonNumber == st.PersonNumber))
