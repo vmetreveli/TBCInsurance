@@ -54,7 +54,7 @@ namespace CleanArchitecture.Application.Services
             }
         }
 
-        public async Task<bool> AddStudent(StudentDto student)
+        public async Task<int> AddStudent(StudentDto student)
         {
             try
             {
@@ -70,16 +70,16 @@ namespace CleanArchitecture.Application.Services
 
                 await _studentRepository.Add(st);
 
-                return true;
+                return st.Id;
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return false;
+                throw;
             }
         }
 
-        public async Task<bool> RemoveStudent(int id)
+        public async Task<int> RemoveStudent(int id)
         {
             try
             {
@@ -87,24 +87,21 @@ namespace CleanArchitecture.Application.Services
 
 
                 var student = _studentRepository.GetById(id).Result;
+                if (student == null) return default;
 
-                if (student != null)
-                {
                     await _studentRepository.Delete(student);
 
-                    return true;
-                }
+                    return id;
 
-                return false;
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return false;
+                throw;
             }
         }
 
-        public async Task<bool> UpdateStudent(StudentDto student)
+        public async Task<int> UpdateStudent(StudentDto student)
         {
             try
             {
@@ -126,12 +123,12 @@ namespace CleanArchitecture.Application.Services
 
                 await _studentRepository.Update(stud);
 
-                return true;
+                return stud.Id;
             }
             catch(Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return false;
+           throw;
             }
         }
 

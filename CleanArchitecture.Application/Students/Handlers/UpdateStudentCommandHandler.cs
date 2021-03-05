@@ -7,7 +7,7 @@ using CleanArchitecture.Application.Students.Dto;
 using MediatR;
 namespace CleanArchitecture.Application.Students.Handlers
 {
-    public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, bool>
+    public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, int>
     {
      private readonly IStudentService _service;
         public UpdateStudentCommandHandler(IStudentService service)
@@ -15,7 +15,7 @@ namespace CleanArchitecture.Application.Students.Handlers
             _service = service;
 
         }
-        public async Task<bool> Handle(UpdateStudentCommand request, CancellationToken cancellationToken) =>
+        public async Task<int> Handle(UpdateStudentCommand request, CancellationToken cancellationToken) =>
             await _service.UpdateStudent(request.Student);
     }
 }

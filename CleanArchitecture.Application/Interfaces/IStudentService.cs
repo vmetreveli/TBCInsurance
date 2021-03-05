@@ -9,8 +9,8 @@ namespace CleanArchitecture.Application.Interfaces
         Task<IQueryable<StudentDto>> GetStudents();
         Task<StudentDto> GetStudentById(int id);
         Task<PagedResult<StudentDto>> FindStudents(string filter);
-        Task<bool> AddStudent(StudentDto student);
-        Task<bool> RemoveStudent(int id);
-        Task<bool> UpdateStudent(StudentDto student);
+        Task<int> AddStudent(StudentDto student);
+        Task<int> RemoveStudent(int id);
+        Task<int> UpdateStudent(StudentDto student);
     }
 }

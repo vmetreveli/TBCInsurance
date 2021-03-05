@@ -21,19 +21,19 @@ namespace API.Controllers.v1
         }
 
         [HttpGet("GetStudents")]
-        public async Task<IEnumerable<StudentDto>> GetStudents() =>
-            await _mediator.Send(new GetAllStudentsQuery());
+        public async Task<IActionResult> GetStudents() =>
+            Ok(_mediator.Send(new GetAllStudentsQuery()));
 
         [HttpPost("AddStudent")]
-        public Task<bool> AddStudent(StudentDto student) =>
-            _mediator.Send(new CreateStudentCommand { Students = student });
+        public async Task<IActionResult> AddStudent(StudentDto student) =>
+            Ok(_mediator.Send(new CreateStudentCommand { Students = student }));
 
         [HttpPut("UpdateStudent")]
-        public Task<bool> UpdateStudent(StudentDto student) =>
-            _mediator.Send(new UpdateStudentCommand { Student = student});
+        public async Task<IActionResult> UpdateStudent(StudentDto student) =>
+            Ok(_mediator.Send(new UpdateStudentCommand { Student = student}));
 
         [HttpDelete("RemoveStudent")]
-        public Task<bool> RemoveStudent(int id) =>
-          _mediator.Send(new DeleteStudentCommand { Id = id });
+        public  async Task<IActionResult> RemoveStudent(int id) =>
+            Ok(_mediator.Send(new DeleteStudentCommand { Id = id }));
     }
 }
