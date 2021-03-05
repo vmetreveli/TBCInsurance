@@ -11,7 +11,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
     {
         private readonly DbContext _context;
         private readonly DbSet<T> DbSet;
-        public Repository(UniDbContext context)
+        public Repository(DbContext context)
         {
             _context = context;
             DbSet = _context.Set<T>();
