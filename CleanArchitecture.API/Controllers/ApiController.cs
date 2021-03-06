@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 namespace API.Controllers.v1
 {
-    [ApiVersion("1.0")]
+
     [ApiController]
     // [Route("api/[controller]")]
     [Route("api/v{version:apiVersion}/[controller]")]
