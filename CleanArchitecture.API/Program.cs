@@ -1,11 +1,12 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 namespace API
 {
     public static class Program
     {
-        public static void Main(string[] args) =>
-            CreateHostBuilder(args).Build().Run();
+        public static async Task Main(string[] args) =>
+            await CreateHostBuilder(args).Build().RunAsync();
 
         private static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)

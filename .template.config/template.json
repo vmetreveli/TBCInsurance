@@ -12,29 +12,25 @@
     },
     "shortName": "ClnArc",
     "sourceName": "CleanArchitecture",
-    "guids": [],
-    "primaryOutputs": [
-      {
-        "path": "src\\CleanArchitecture.Core\\CleanArchitecture.Core.csproj"
-      },
-      {
-        "path": "src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj"
-      },
-      {
-        "path": "src\\CleanArchitecture.SharedKernel\\CleanArchitecture.SharedKernel.csproj"
-      },
-      {
-        "path": "src\\CleanArchitecture.Web\\CleanArchitecture.Web.csproj"
-      },
-      {
-        "path": "tests\\CleanArchitecture.UnitTests\\CleanArchitecture.UnitTests.csproj"
-      },
-      {
-        "path": "tests\\CleanArchitecture.IntegrationTests\\CleanArchitecture.IntegrationTests.csproj"
-      },
-      {
-        "path": "tests\\CleanArchitecture.FunctionalTests\\CleanArchitecture.FunctionalTests.csproj"
+    "symbols": {
+      "Framework": {
+        "type": "parameter",
+        "description": "The target framework for the project.",
+        "datatype": "choice",
+        "choices": [
+          {
+            "choice": "netcoreapp2.0"
+          },
+          {
+            "choice": "netcoreapp3.0"
+          },
+          {
+            "choice": "net5.0"
+          }
+        ],
+        "defaultValue": "net5.0"
       }
-    ]
+    }
+   
   }
   

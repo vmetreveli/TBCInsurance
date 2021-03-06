@@ -12,7 +12,6 @@ namespace API.Controllers.v1
     {
 
         private readonly IMediator _mediator;
-        private readonly IStudentService _studentService;
 
         public StudentController(IMediator mediator) =>
             _mediator = mediator;
