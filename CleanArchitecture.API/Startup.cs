@@ -1,4 +1,4 @@
-using CleanArchitecture.Infastructure.IoC;
+using CleanArchitecture.Infrastructure.IoC;
 using CleanArchitecture.Infra.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

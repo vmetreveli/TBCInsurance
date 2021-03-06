@@ -10,7 +10,7 @@ using CleanArchitecture.Infra.Data.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-namespace CleanArchitecture.Infastructure.IoC
+namespace CleanArchitecture.Infrastructure.IoC
 
 {
     public static class DependencyContainer
