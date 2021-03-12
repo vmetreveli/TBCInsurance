@@ -18,18 +18,18 @@ namespace API.Controllers.v1
 
         [HttpGet("GetStudents")]
         public async Task<IActionResult> GetStudents() =>
-            Ok(_mediator.Send(new GetAllStudentsQuery()));
+            Ok(await _mediator.Send(new GetAllStudentsQuery()));
 
         [HttpPost("AddStudent")]
         public async Task<IActionResult> AddStudent(StudentDto student) =>
-            Ok(_mediator.Send(new CreateStudentCommand { Students = student }));
+            Ok(await _mediator.Send(new CreateStudentCommand { Students = student }));
 
         [HttpPut("UpdateStudent")]
         public async Task<IActionResult> UpdateStudent(StudentDto student) =>
-            Ok(_mediator.Send(new UpdateStudentCommand { Student = student }));
+            Ok(await _mediator.Send(new UpdateStudentCommand { Student = student }));
 
         [HttpDelete("RemoveStudent")]
         public async Task<IActionResult> RemoveStudent(int id) =>
-            Ok(_mediator.Send(new DeleteStudentCommand { Id = id }));
+            Ok(await _mediator.Send(new DeleteStudentCommand { Id = id }));
     }
 }
