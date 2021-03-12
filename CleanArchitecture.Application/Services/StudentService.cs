@@ -9,6 +9,7 @@ using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+
 namespace CleanArchitecture.Application.Services
 {
 
@@ -35,6 +36,7 @@ namespace CleanArchitecture.Application.Services
                 _logger.LogInformation($"FindStudents:{filter}");
 
                 PageFilter obj = null;
+
 
                 if (!string.IsNullOrEmpty(filter)) obj = JsonConvert.DeserializeObject<PageFilter>(filter);
 
