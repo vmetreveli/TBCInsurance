@@ -118,10 +118,10 @@ namespace CleanArchitecture.Application.Services
 
 
                 var stud = _studentRepository.GetById(st.Id).Result;
-                st.Name = st.Name;
-                st.Sex = st.Sex;
-                st.LastName = st.LastName;
-                st.PersonNumber = st.PersonNumber;
+                stud.Name = st.Name;
+                stud.Sex = st.Sex;
+                stud.LastName = st.LastName;
+                stud.PersonNumber = st.PersonNumber;
 
                 await _studentRepository.Update(stud);
 
