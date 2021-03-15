@@ -4,10 +4,10 @@ namespace CleanArchitecture.Domain.Models
 {
     public abstract class PagedResultBase
     {
-        public int CurrentPage { get; set; }
+        public int CurrentPage { get; init; }
         public int PageCount { get; set; }
-        public int PageSize { get; set; }
-        public int RowCount { get; set; }
+        public int PageSize { get; init; }
+        public int RowCount { get; init; }
 
         public int FirstRowOnPage => ( CurrentPage - 1 ) * PageSize + 1;
 
