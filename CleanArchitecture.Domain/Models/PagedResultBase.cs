@@ -9,7 +9,7 @@ namespace CleanArchitecture.Domain.Models
         public int PageSize { get; init; }
         public int RowCount { get; init; }
 
-        public int FirstRowOnPage => ( CurrentPage - 1 ) * PageSize + 1;
+        public int FirstRowOnPage => (CurrentPage - 1) * PageSize + 1;
 
         public int LastRowOnPage => Math.Min(CurrentPage * PageSize, RowCount);
     }
@@ -17,8 +17,10 @@ namespace CleanArchitecture.Domain.Models
     public class PagedResult<T> : PagedResultBase where T : class
     {
 
-        public PagedResult() =>
+        public PagedResult()
+        {
             Results = new List<T>();
+        }
         public IList<T> Results { get; set; }
     }
 
@@ -31,7 +33,9 @@ namespace CleanArchitecture.Domain.Models
         public string Name { get; set; }
         public string LastName { get; set; }
 
-        public override string ToString() =>
-            $"PageIndex={PageIndex}; PageSize={PageSize}; BirthDate={BirthDate}; PersonNumber={PersonNumber}";
+        public override string ToString()
+        {
+            return $"PageIndex={PageIndex}; PageSize={PageSize}; BirthDate={BirthDate}; PersonNumber={PersonNumber}";
+        }
     }
 }

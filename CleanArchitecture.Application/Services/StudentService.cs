@@ -26,8 +26,10 @@ namespace CleanArchitecture.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IQueryable<StudentDto>> GetStudents() =>
-            _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
+        public async Task<IQueryable<StudentDto>> GetStudents()
+        {
+            return _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
+        }
 
         public async Task<PagedResult<StudentDto>> FindStudents(string filter)
         {
@@ -41,7 +43,8 @@ namespace CleanArchitecture.Application.Services
                 if (!string.IsNullOrEmpty(filter)) obj = JsonConvert.DeserializeObject<PageFilter>(filter);
 
                 var query = !string.IsNullOrEmpty(obj?.PersonNumber)
-                    ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber || i.LastName == obj.LastName ||
+                    ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber ||
+                                                        i.LastName == obj.LastName ||
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
 

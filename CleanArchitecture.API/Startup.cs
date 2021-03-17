@@ -12,8 +12,10 @@ namespace API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration) =>
+        public Startup(IConfiguration configuration)
+        {
             Configuration = configuration;
+        }
 
         private IConfiguration Configuration { get; }
 
@@ -84,7 +86,9 @@ namespace API
             });
         }
 
-        private static void RegisterServices(IServiceCollection services) =>
+        private static void RegisterServices(IServiceCollection services)
+        {
             services.RegisterServices();
+        }
     }
 }

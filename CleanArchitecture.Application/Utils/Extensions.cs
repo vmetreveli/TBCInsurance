@@ -15,7 +15,7 @@ namespace CleanArchitecture.Application.Utils
             var pageCount = (double)result.RowCount / pageSize;
             result.PageCount = (int)Math.Ceiling(pageCount);
 
-            var skip = ( page - 1 ) * pageSize;
+            var skip = (page - 1) * pageSize;
             result.Results = query.Skip(skip).Take(pageSize).ToList();
 
             return result;
@@ -30,7 +30,7 @@ namespace CleanArchitecture.Application.Utils
             var pageCount = (double)result.RowCount / pageSize;
             result.PageCount = (int)Math.Ceiling(pageCount);
 
-            var skip = ( page - 1 ) * pageSize;
+            var skip = (page - 1) * pageSize;
             result.Results = query.Skip(skip).Take(pageSize).ToList();
 
             return result;

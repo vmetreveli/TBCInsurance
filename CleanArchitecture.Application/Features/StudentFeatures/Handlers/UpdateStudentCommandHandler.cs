@@ -8,9 +8,13 @@ namespace CleanArchitecture.Application.Students.Handlers
     public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, int>
     {
         private readonly IStudentService _service;
-        public UpdateStudentCommandHandler(IStudentService service) =>
+        public UpdateStudentCommandHandler(IStudentService service)
+        {
             _service = service;
-        public async Task<int> Handle(UpdateStudentCommand request, CancellationToken cancellationToken) =>
-            await _service.UpdateStudent(request.Student);
+        }
+        public async Task<int> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
+        {
+            return await _service.UpdateStudent(request.Student);
+        }
     }
 }

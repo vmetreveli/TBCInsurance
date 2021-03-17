@@ -4,7 +4,8 @@ namespace CleanArchitecture.Infra.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {
-        protected override void Up(MigrationBuilder migrationBuilder) =>
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
             migrationBuilder.CreateTable(
                 "Students",
                 table => new
@@ -21,9 +22,12 @@ namespace CleanArchitecture.Infra.Data.Migrations
                 {
                     table.PrimaryKey("PK_Students", x => x.Id);
                 });
+        }
 
-        protected override void Down(MigrationBuilder migrationBuilder) =>
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
             migrationBuilder.DropTable(
                 "Students");
+        }
     }
 }

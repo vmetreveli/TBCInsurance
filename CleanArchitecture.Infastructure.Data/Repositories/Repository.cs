@@ -40,17 +40,23 @@ namespace CleanArchitecture.Infra.Data.Repositories
 
         }
 
-        public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate) =>
-            DbSet.Where(predicate);
+        public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate)
+        {
+            return DbSet.Where(predicate);
+        }
 
-        public async Task<IQueryable<T>> GetAll() =>
-            DbSet;
+        public async Task<IQueryable<T>> GetAll()
+        {
+            return DbSet;
+        }
 
-        public async Task<T> GetById(int id) =>
+        public async Task<T> GetById(int id)
+        {
             // Beware the == operator throws NotSupported Exception!
             // 'The Mapping of Interface Member is not supported'
             // Use .Equals() instead
-            await DbSet.FindAsync(id);
+            return await DbSet.FindAsync(id);
+        }
 
         #endregion
     }

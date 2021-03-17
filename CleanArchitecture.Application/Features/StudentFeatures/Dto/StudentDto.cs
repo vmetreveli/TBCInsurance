@@ -14,8 +14,10 @@
 
         public string Sex { get; set; }
 
-        public override string ToString() =>
-            $"Id: {Id}, PersonNumber: {PersonNumber}, Name: {Name}, LastName: {LastName}, Sex: {Sex}";
+        public override string ToString()
+        {
+            return $"Id: {Id}, PersonNumber: {PersonNumber}, Name: {Name}, LastName: {LastName}, Sex: {Sex}";
+        }
 
     }
 }
