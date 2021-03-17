@@ -21,7 +21,7 @@ namespace CleanArchitecture.Application.Utils
             return result;
         }
 
-        public static PagedResult<T> GetPaged<T>(this IEnumerable<T> query,
+        public static PagedResult<T> GetPaged<T>(this IList<T> query,
             int page, int pageSize) where T : class
         {
             var result = new PagedResult<T> { CurrentPage = page, PageSize = pageSize, RowCount = query.Count() };

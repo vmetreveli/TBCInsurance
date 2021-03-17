@@ -1,7 +1,7 @@
 using AutoMapper;
-using CleanArchitecture.Application.Students.Dto;
+using CleanArchitecture.Application.Features.StudentFeatures.Dto;
 using CleanArchitecture.Domain.Models;
-namespace CleanArchitecture.Application.Students.MappingProfiles
+namespace CleanArchitecture.Application.Features.StudentFeatures.MappingProfiles
 {
     public class StudentMappingProfile : Profile
     {

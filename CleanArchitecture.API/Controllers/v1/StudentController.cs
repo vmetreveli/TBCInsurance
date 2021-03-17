@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
+using CleanArchitecture.Application.Features.StudentFeatures.Commands;
+using CleanArchitecture.Application.Features.StudentFeatures.Dto;
+using CleanArchitecture.Application.Features.StudentFeatures.Queries;
 using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Application.Students.Commands;
-using CleanArchitecture.Application.Students.Dto;
-using CleanArchitecture.Application.Students.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers.v1

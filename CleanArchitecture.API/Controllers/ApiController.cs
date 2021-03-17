@@ -1,7 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-namespace API.Controllers.v1
+namespace API.Controllers
 {
 
     [ApiController]

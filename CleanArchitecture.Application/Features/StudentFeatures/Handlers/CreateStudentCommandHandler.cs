@@ -1,9 +1,9 @@
 using System.Threading;
 using System.Threading.Tasks;
+using CleanArchitecture.Application.Features.StudentFeatures.Commands;
 using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Application.Students.Commands;
 using MediatR;
-namespace CleanArchitecture.Application.Students.Handlers
+namespace CleanArchitecture.Application.Features.StudentFeatures.Handlers
 {
     public class CreateStudentCommandHandler : IRequestHandler<CreateStudentCommand, int>
     {

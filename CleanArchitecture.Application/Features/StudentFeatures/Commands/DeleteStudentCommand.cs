@@ -1,5 +1,5 @@
 using MediatR;
-namespace CleanArchitecture.Application.Students.Commands
+namespace CleanArchitecture.Application.Features.StudentFeatures.Commands
 {
     public class DeleteStudentCommand : IRequest<int>
     {

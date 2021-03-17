@@ -1,6 +1,6 @@
 using System.Linq;
 using System.Threading.Tasks;
-using CleanArchitecture.Application.Students.Dto;
+using CleanArchitecture.Application.Features.StudentFeatures.Dto;
 using CleanArchitecture.Domain.Models;
 namespace CleanArchitecture.Application.Interfaces
 {

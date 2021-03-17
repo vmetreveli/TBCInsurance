@@ -1,8 +1,8 @@
 using System.Reflection;
+using CleanArchitecture.Application.Features.StudentFeatures.MappingProfiles;
+using CleanArchitecture.Application.Features.StudentFeatures.Queries;
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Services;
-using CleanArchitecture.Application.Students.MappingProfiles;
-using CleanArchitecture.Application.Students.Queries;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infra.Data.Context;

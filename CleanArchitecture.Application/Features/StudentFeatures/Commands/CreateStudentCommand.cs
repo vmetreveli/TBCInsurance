@@ -1,6 +1,6 @@
-using CleanArchitecture.Application.Students.Dto;
+using CleanArchitecture.Application.Features.StudentFeatures.Dto;
 using MediatR;
-namespace CleanArchitecture.Application.Students.Commands
+namespace CleanArchitecture.Application.Features.StudentFeatures.Commands
 {
     public class CreateStudentCommand : IRequest<int>
     {
