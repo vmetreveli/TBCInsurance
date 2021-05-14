@@ -2,14 +2,16 @@
 using CleanArchitecture.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CleanArchitecture.Infra.Data.Migrations
 {
     [DbContext(typeof(UniDbContext))]
-    partial class UniDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210514060328_added refresh token table")]
+    partial class addedrefreshtokentable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
