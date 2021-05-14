@@ -1,7 +1,10 @@
-﻿namespace CleanArchitecture.Application.Interfaces
+﻿using System.Threading.Tasks;
+using CleanArchitecture.Domain.Models.Entities;
+
+namespace CleanArchitecture.Application.Interfaces
 {
-    public class IUserService
+    public interface IUserService
     {
-        
+        Task<string> RegisterAsync(RegisterModel model);
     }
 }

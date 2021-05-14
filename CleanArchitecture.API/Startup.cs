@@ -35,7 +35,7 @@ namespace API
             services.Configure<JWT>(Configuration.GetSection("JWT"));
             //User Manager Service
             services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<UniDbContext>();
-            services.AddScoped<IUserService, UserService>();
+          
 
             services.AddDbContext<UniDbContext>(options =>
                 options.UseSqlite(
