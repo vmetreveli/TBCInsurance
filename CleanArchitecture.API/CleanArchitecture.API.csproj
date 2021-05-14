@@ -20,7 +20,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CleanArchitecture.Common\CleanArchitecture.Common.csproj" />
       <ProjectReference Include="..\CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj" />
     </ItemGroup>
 
