@@ -4,10 +4,12 @@ using CleanArchitecture.Application.Features.StudentFeatures.Dto;
 using CleanArchitecture.Application.Features.StudentFeatures.Queries;
 using CleanArchitecture.Application.Interfaces;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers.v1
 {
     [ApiVersion("1.0")]
+    [Authorize]
     public class StudentController : ApiController
     {
 

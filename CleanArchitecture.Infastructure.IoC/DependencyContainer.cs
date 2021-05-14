@@ -5,7 +5,7 @@ using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Services;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
-using CleanArchitecture.Infra.Data.Context;
+using CleanArchitecture.Infrastructure.Data.Context;
 using CleanArchitecture.Infra.Data.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

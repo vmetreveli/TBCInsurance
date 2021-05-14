@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">
           <PrivateAssets>all</PrivateAssets>
@@ -19,6 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\CleanArchitecture.Common\CleanArchitecture.Common.csproj" />
       <ProjectReference Include="..\CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj" />
     </ItemGroup>
 

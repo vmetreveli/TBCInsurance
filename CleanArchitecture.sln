@@ -15,15 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoC", "IoC", "{B3DA2781-B60
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3DAEA8A0-DA3D-43C6-A51F-CFAA969C9E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{3E6317DF-A010-4783-AB35-704CE9986CE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{3E6317DF-A010-4783-AB35-704CE9986CE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infastructure.Data", "CleanArchitecture.Infastructure.Data\CleanArchitecture.Infastructure.Data.csproj", "{DCBADD5B-2C5A-4A0E-A390-E9CEACC1F9D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infastructure.Data", "CleanArchitecture.Infastructure.Data\CleanArchitecture.Infastructure.Data.csproj", "{DCBADD5B-2C5A-4A0E-A390-E9CEACC1F9D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{CBB9D821-A17D-4687-BAB4-0658DE6846D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{CBB9D821-A17D-4687-BAB4-0658DE6846D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infastructure.IoC", "CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj", "{89EB3142-75F1-4245-AABE-A382EDA42841}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infastructure.IoC", "CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj", "{89EB3142-75F1-4245-AABE-A382EDA42841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.API", "CleanArchitecture.API\CleanArchitecture.API.csproj", "{2AA5285E-615F-4B08-9FC8-B3111234BE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.API", "CleanArchitecture.API\CleanArchitecture.API.csproj", "{2AA5285E-615F-4B08-9FC8-B3111234BE56}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1DB8D1C9-67E1-4EC2-8799-13CC3A861A44}"
 EndProject
@@ -64,8 +64,8 @@ Global
 		{DCBADD5B-2C5A-4A0E-A390-E9CEACC1F9D8} = {F2FDAD8D-8B84-446D-B54F-4A9F6769B7D9}
 		{CBB9D821-A17D-4687-BAB4-0658DE6846D1} = {7613830B-3498-40C3-B047-5589DAE9972E}
 		{89EB3142-75F1-4245-AABE-A382EDA42841} = {B3DA2781-B602-427F-86B2-DA402395CA52}
-		{1DB8D1C9-67E1-4EC2-8799-13CC3A861A44} = {3DAEA8A0-DA3D-43C6-A51F-CFAA969C9E39}
 		{2AA5285E-615F-4B08-9FC8-B3111234BE56} = {1DB8D1C9-67E1-4EC2-8799-13CC3A861A44}
+		{1DB8D1C9-67E1-4EC2-8799-13CC3A861A44} = {3DAEA8A0-DA3D-43C6-A51F-CFAA969C9E39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4FFA5E5-91D1-4C35-9822-536EBE39EABD}

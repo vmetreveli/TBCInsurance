@@ -1,12 +1,21 @@
+using System;
+using System.Text;
+using CleanArchitecture.Application.Interfaces;
+using CleanArchitecture.Application.Services;
+using CleanArchitecture.Common.AppSettings;
+using CleanArchitecture.Domain.Models.Entities;
 using CleanArchitecture.Infrastructure.IoC;
-using CleanArchitecture.Infra.Data.Context;
+using CleanArchitecture.Infrastructure.Data.Context;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 namespace API
 {
@@ -22,10 +31,39 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configuration from AppSettings
+            services.Configure<JWT>(Configuration.GetSection("JWT"));
+            //User Manager Service
+            services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<UniDbContext>();
+            services.AddScoped<IUserService, UserService>();
+
             services.AddDbContext<UniDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
 
+            //Adding Athentication - JWT
+            services.AddAuthentication(options =>
+                {
+                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(o =>
+                {
+                    o.RequireHttpsMetadata = false;
+                    o.SaveToken = false;
+                    o.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.Zero,
+                        ValidIssuer = Configuration["JWT:Issuer"],
+                        ValidAudience = Configuration["JWT:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
+                    };
+                });
+            
             services.AddControllers();
 
             // services.AddMediatR(typeof(Startup));
@@ -54,7 +92,6 @@ namespace API
             #endregion
 
 
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +108,7 @@ namespace API
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             // Shows UseCors with CorsPolicyBuilder.
