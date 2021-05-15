@@ -6,8 +6,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Common.AppSettings;
 using CleanArchitecture.Domain;
+using CleanArchitecture.Domain.Identity.AppSettings;
 using CleanArchitecture.Domain.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
@@ -17,12 +17,12 @@ namespace CleanArchitecture.Application.Services
 {
     public class UserService : IUserService
     {
-        private readonly JWT _jwt;
+        private readonly JwtToken _jwt;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<User> _userManager;
 
         public UserService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager,
-            IOptions<JWT> jwt)
+            IOptions<JwtToken> jwt)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -119,7 +119,7 @@ namespace CleanArchitecture.Application.Services
                 .Union(userClaims)
                 .Union(roleClaims);
 
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.SecretKey));
             var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
 
             var jwtSecurityToken = new JwtSecurityToken(

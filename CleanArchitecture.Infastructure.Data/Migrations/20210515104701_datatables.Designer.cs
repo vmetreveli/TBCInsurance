@@ -3,15 +3,17 @@ using System;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CleanArchitecture.Infra.Data.Migrations
 {
     [DbContext(typeof(UniDbContext))]
-    partial class UniDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210515104701_datatables")]
+    partial class datatables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,9 +139,6 @@ namespace CleanArchitecture.Infra.Data.Migrations
 
                     b.Property<int?>("CompanyId")
                         .HasColumnType("integer");
-
-                    b.Property<decimal>("CompanyPrice")
-                        .HasColumnType("numeric");
 
                     b.Property<int?>("MarketId")
                         .HasColumnType("integer");

@@ -19,6 +19,7 @@ namespace CleanArchitecture.Infrastructure.IoC
         {
             services.AddScoped<IUserService, UserService>();
 
+
             //CleanArchitecture.Application
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<DbContext, UniDbContext>();

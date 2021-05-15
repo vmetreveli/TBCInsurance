@@ -1,8 +1,8 @@
-﻿namespace CleanArchitecture.Common.AppSettings
+﻿namespace CleanArchitecture.Domain.Identity.AppSettings
 {
-    public class JWT
+    public class JwtToken
     {
-        public string Key { get; set; }
+        public string SecretKey { get; set; }
         public string Issuer { get; set; }
         public string Audience { get; set; }
         public double DurationInMinutes { get; set; }

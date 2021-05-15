@@ -15,5 +15,8 @@ namespace CleanArchitecture.Infrastructure.Data.Context
         {
         }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Market> Markets { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Price> Prices { get; set; }
     }
 }
