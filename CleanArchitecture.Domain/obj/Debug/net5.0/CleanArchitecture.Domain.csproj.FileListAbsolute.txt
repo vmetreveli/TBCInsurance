@@ -11,6 +11,8 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/ref/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/TBCInsurance/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.pdb
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.deps.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.runtimeconfig.json
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.runtimeconfig.dev.json
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/ref/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.pdb
@@ -22,6 +24,4 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/ref/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.pdb
-/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.runtimeconfig.json
-/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/bin/Debug/net5.0/CleanArchitecture.Domain.runtimeconfig.dev.json
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.genruntimeconfig.cache

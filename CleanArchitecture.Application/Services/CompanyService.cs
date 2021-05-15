@@ -16,14 +16,11 @@ namespace CleanArchitecture.Application.Services
 {
     public class CompanyService : ICompanyService
     {
-        private readonly IRepository<Company> _companyRepository;
         private readonly string _connectionString;
 
 
-        public CompanyService(IRepository<Company> companyRepository, UniDbContext dbContext)
+        public CompanyService(UniDbContext dbContext)
         {
-            _companyRepository = companyRepository;
-
             _connectionString = dbContext.Database.GetDbConnection().ConnectionString;
         }
 

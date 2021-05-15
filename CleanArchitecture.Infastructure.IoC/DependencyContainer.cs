@@ -18,6 +18,7 @@ namespace CleanArchitecture.Infrastructure.IoC
             services.AddScoped<ISalesService, SalesService>();
             services.AddScoped<IRepository<Student>, Repository<Student>>();
             services.AddScoped<DbContext, UniDbContext>();
+            services.AddScoped<IServiceCollection, ServiceCollection>();
 
         }
     }
