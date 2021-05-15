@@ -3,6 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Interfaces;
+using CleanArchitecture.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 namespace CleanArchitecture.Infra.Data.Repositories
 {
@@ -43,7 +44,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
         public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate) =>
             DbSet.Where(predicate);
 
-        public async Task<IQueryable<T>> GetAll() =>
+        public async Task<PagedResult<Company>> GetAll() =>
             DbSet;
 
         public async Task<T> GetById(int id) =>
