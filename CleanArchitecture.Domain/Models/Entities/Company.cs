@@ -8,7 +8,7 @@ namespace CleanArchitecture.Domain.Models
         public int Id { get; set; }
 
         public string CompanyName { get; set; }
-
+        public Market Market { get; set; }
         public DateTime Time { get; set; } = DateTime.Now;
 
     }

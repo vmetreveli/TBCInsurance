@@ -44,7 +44,7 @@ namespace CleanArchitecture.Infra.Data.Repositories
         public async Task<IQueryable<T>> SearchFor(Expression<Func<T, bool>> predicate) =>
             DbSet.Where(predicate);
 
-        public async Task<PagedResult<Company>> GetAll() =>
+        public async Task<IQueryable<T>> GetAll() =>
             DbSet;
 
         public async Task<T> GetById(int id) =>

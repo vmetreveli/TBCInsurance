@@ -29,10 +29,15 @@ namespace CleanArchitecture.Infra.Data.Migrations
                     b.Property<string>("CompanyName")
                         .HasColumnType("text");
 
+                    b.Property<int?>("MarketId")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("Time")
                         .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MarketId");
 
                     b.ToTable("Companies");
                 });
@@ -120,40 +125,15 @@ namespace CleanArchitecture.Infra.Data.Migrations
                     b.Property<string>("MarketName")
                         .HasColumnType("text");
 
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
+
                     b.Property<DateTime>("Time")
                         .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
                     b.ToTable("Markets");
-                });
-
-            modelBuilder.Entity("CleanArchitecture.Domain.Models.Price", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int?>("CompanyId")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("CompanyPrice")
-                        .HasColumnType("numeric");
-
-                    b.Property<int?>("MarketId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("Time")
-                        .HasColumnType("timestamp without time zone");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CompanyId");
-
-                    b.HasIndex("MarketId");
-
-                    b.ToTable("Prices");
                 });
 
             modelBuilder.Entity("CleanArchitecture.Domain.Models.Student", b =>
@@ -314,17 +294,11 @@ namespace CleanArchitecture.Infra.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("CleanArchitecture.Domain.Models.Price", b =>
+            modelBuilder.Entity("CleanArchitecture.Domain.Models.Company", b =>
                 {
-                    b.HasOne("CleanArchitecture.Domain.Models.Company", "Company")
-                        .WithMany()
-                        .HasForeignKey("CompanyId");
-
                     b.HasOne("CleanArchitecture.Domain.Models.Market", "Market")
                         .WithMany()
                         .HasForeignKey("MarketId");
-
-                    b.Navigation("Company");
 
                     b.Navigation("Market");
                 });

@@ -28,3 +28,5 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/CleanArchitecture.Application.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/ref/CleanArchitecture.Application.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/CleanArchitecture.Application.pdb
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net5.0/CleanArchitecture.Infastructure.Data.dll
+/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net5.0/CleanArchitecture.Infastructure.Data.pdb

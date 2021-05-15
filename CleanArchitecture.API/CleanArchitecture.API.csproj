@@ -27,8 +27,4 @@
       <ProjectReference Include="..\CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Swagger" />
-    </ItemGroup>
-
 </Project>

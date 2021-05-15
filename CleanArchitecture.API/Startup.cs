@@ -49,28 +49,6 @@ namespace API
                 options.UseNpgsql(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            //Adding Athentication - JWT
-            // services.AddAuthentication(options =>
-            //     {
-            //         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //     })
-            //     .AddJwtBearer(o =>
-            //     {
-            //         o.RequireHttpsMetadata = false;
-            //         o.SaveToken = false;
-            //         o.TokenValidationParameters = new TokenValidationParameters
-            //         {
-            //             ValidateIssuerSigningKey = true,
-            //             ValidateIssuer = true,
-            //             ValidateAudience = true,
-            //             ValidateLifetime = true,
-            //             ClockSkew = TimeSpan.Zero,
-            //             ValidIssuer = Configuration["JWT:Issuer"],
-            //             ValidAudience = Configuration["JWT:Audience"],
-            //             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
-            //         };
-            //     });
 
             services.AddSwaggerGen(c =>
             {
