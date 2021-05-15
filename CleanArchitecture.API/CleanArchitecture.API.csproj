@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+        <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">
@@ -14,6 +15,9 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
 
        
 
@@ -21,6 +25,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Swagger" />
     </ItemGroup>
 
 </Project>

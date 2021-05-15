@@ -9,14 +9,10 @@ namespace CleanArchitecture.Application.Features.StudentFeatures.Handlers
     {
         private readonly IStudentService _service;
 
-        public CreateStudentCommandHandler(IStudentService service)
-        {
+        public CreateStudentCommandHandler(IStudentService service) =>
             _service = service;
-        }
 
-        public async Task<int> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
-        {
-            return await _service.AddStudent(request.Students);
-        }
+        public async Task<int> Handle(CreateStudentCommand request, CancellationToken cancellationToken) =>
+            await _service.AddStudent(request.Students);
     }
 }

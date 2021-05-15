@@ -11,13 +11,9 @@ namespace CleanArchitecture.Application.Features.StudentFeatures.Handlers
     {
         private readonly IStudentService _service;
 
-        public GetAllStudentsQueryHandler(IStudentService service)
-        {
+        public GetAllStudentsQueryHandler(IStudentService service) =>
             _service = service;
-        }
-        public async Task<IQueryable<StudentDto>> Handle(GetAllStudentsQuery request, CancellationToken cancellationToken)
-        {
-            return await _service.GetStudents();
-        }
+        public async Task<IQueryable<StudentDto>> Handle(GetAllStudentsQuery request, CancellationToken cancellationToken) =>
+            await _service.GetStudents();
     }
 }

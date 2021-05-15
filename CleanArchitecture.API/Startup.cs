@@ -1,10 +1,9 @@
 using System;
 using System.Text;
-using API.Swagger;
 using CleanArchitecture.Common.AppSettings;
 using CleanArchitecture.Domain.Models.Entities;
-using CleanArchitecture.Infrastructure.IoC;
 using CleanArchitecture.Infrastructure.Data.Context;
+using CleanArchitecture.Infrastructure.IoC;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,15 +14,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-
+using Microsoft.OpenApi.Models;
 namespace API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
+        public Startup(IConfiguration configuration) =>
             Configuration = configuration;
-        }
 
         private IConfiguration Configuration { get; }
 
@@ -32,6 +29,7 @@ namespace API
         {
             //Configuration from AppSettings
             services.Configure<JWT>(Configuration.GetSection("JWT"));
+
             //User Manager Service
             services.AddIdentity<User, IdentityRole>(settings =>
             {
@@ -44,14 +42,68 @@ namespace API
                 settings.Password.RequireLowercase = false;
                 settings.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<UniDbContext>().AddDefaultTokenProviders();
+
             services.AddControllersWithViews();
 
             services.AddDbContext<UniDbContext>(options =>
-                options.UseSqlite(
+                options.UseNpgsql(
                     Configuration.GetConnectionString("DefaultConnection")));
 
             //Adding Athentication - JWT
-            services.AddAuthentication(options =>
+            // services.AddAuthentication(options =>
+            //     {
+            //         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //     })
+            //     .AddJwtBearer(o =>
+            //     {
+            //         o.RequireHttpsMetadata = false;
+            //         o.SaveToken = false;
+            //         o.TokenValidationParameters = new TokenValidationParameters
+            //         {
+            //             ValidateIssuerSigningKey = true,
+            //             ValidateIssuer = true,
+            //             ValidateAudience = true,
+            //             ValidateLifetime = true,
+            //             ClockSkew = TimeSpan.Zero,
+            //             ValidIssuer = Configuration["JWT:Issuer"],
+            //             ValidAudience = Configuration["JWT:Audience"],
+            //             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
+            //         };
+            //     });
+
+            services.AddSwaggerGen(c =>
+                {
+                    c.SwaggerDoc("v1", new OpenApiInfo
+                    {
+                        Title = "My API",
+                        Version = "v1"
+                    });
+
+                    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                    {
+                        In = ParameterLocation.Header,
+                        Description = "Please insert JWT with Bearer into field",
+                        Name = "Authorization",
+                        Type = SecuritySchemeType.ApiKey
+                    });
+
+                    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                    {
+                        {
+                            new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            new string[] { }
+                        }
+                    });
+                })
+                .AddAuthentication(options =>
                 {
                     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -60,6 +112,7 @@ namespace API
                 {
                     o.RequireHttpsMetadata = false;
                     o.SaveToken = false;
+
                     o.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuerSigningKey = true,
@@ -72,7 +125,7 @@ namespace API
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
                     };
                 });
-            
+
             services.AddControllers();
 
             // services.AddMediatR(typeof(Startup));
@@ -83,7 +136,7 @@ namespace API
             // services.AddSwaggerGen(c =>
             // {
             //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArchitecture.API", Version = "v1" });
-            //     
+            //
             // });
 
             #region Api Versioning
@@ -133,13 +186,11 @@ namespace API
                 endpoints.MapControllers();
             });
             //Enable Swagger
-            app.UseSwaggerDocumentation(Configuration.GetValue<string>("IdentityServerOptions:AuthClientId"), Configuration.GetValue<string>("IdentityServerOptions:AuthClientSecret"));
+            //  app.UseSwaggerDocumentation();//Configuration.GetValue<string>("IdentityServerOptions:AuthClientId"), Configuration.GetValue<string>("IdentityServerOptions:AuthClientSecret"));
 
         }
 
-        private static void RegisterServices(IServiceCollection services)
-        {
+        private static void RegisterServices(IServiceCollection services) =>
             services.RegisterServices();
-        }
     }
 }

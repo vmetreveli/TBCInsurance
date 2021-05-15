@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-
 namespace CleanArchitecture.Domain.Models.Entities
 {
     public class AuthenticationModel

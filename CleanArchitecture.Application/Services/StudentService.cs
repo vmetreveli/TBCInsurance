@@ -9,7 +9,6 @@ using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-
 namespace CleanArchitecture.Application.Services
 {
 
@@ -26,28 +25,28 @@ namespace CleanArchitecture.Application.Services
             _mapper = mapper;
         }
 
-        public async Task<IQueryable<StudentDto>> GetStudents()
-        {
-            return _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
-        }
+        public async Task<IQueryable<StudentDto>> GetStudents() =>
+            _studentRepository.GetAll().Result.Select(i => _mapper.Map(i, new StudentDto()));
 
         public async Task<PagedResult<StudentDto>> FindStudents(string filter)
         {
             try
             {
-             PageFilter obj = null;
+                PageFilter obj = null;
                 if (!string.IsNullOrEmpty(filter)) obj = JsonConvert.DeserializeObject<PageFilter>(filter);
+
                 var query = !string.IsNullOrEmpty(obj?.PersonNumber)
                     ? _studentRepository.SearchFor(i => i.PersonNumber == obj.PersonNumber ||
                                                         i.LastName == obj.LastName ||
                                                         i.Name == obj.Name)
                     : _studentRepository.GetAll();
-                return  query.Result.Select(i => _mapper.Map(i, new StudentDto()))
+
+                return query.Result.Select(i => _mapper.Map(i, new StudentDto()))
                     .GetPaged(obj.PageIndex, obj.PageSize);
             }
             catch(Exception ex)
             {
-               _logger.LogError($"Error: {ex.Message}");
+                _logger.LogError($"Error: {ex.Message}");
                 return new PagedResult<StudentDto>();
             }
         }
@@ -132,7 +131,7 @@ namespace CleanArchitecture.Application.Services
 
         public async Task<StudentDto> GetStudentById(int id)
         {
-            var student =  _studentRepository.GetById(id).Result;
+            var student = _studentRepository.GetById(id).Result;
             return _mapper.Map(student, new StudentDto());
         }
     }

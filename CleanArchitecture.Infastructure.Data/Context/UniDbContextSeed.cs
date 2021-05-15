@@ -1,9 +1,8 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using CleanArchitecture.Domain;
 using CleanArchitecture.Domain.Models.Entities;
 using Microsoft.AspNetCore.Identity;
-using Authorization = CleanArchitecture.Domain.Authorization;
-
 namespace CleanArchitecture.Infrastructure.Data.Context
 {
     public class UniDbContextSeed
@@ -14,8 +13,11 @@ namespace CleanArchitecture.Infrastructure.Data.Context
             await roleManager.CreateAsync(new IdentityRole(Authorization.Roles.Administrator.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Authorization.Roles.Moderator.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Authorization.Roles.User.ToString()));
+
             //Seed Default User
-            var defaultUser = new User { UserName = Authorization.default_username, Email = Authorization.default_email, EmailConfirmed = true, PhoneNumberConfirmed = true };
+            var defaultUser = new User
+                { UserName = Authorization.default_username, Email = Authorization.default_email, PhoneNumberConfirmed = true };
+
             if (userManager.Users.All(u => u.Id != defaultUser.Id))
             {
                 await userManager.CreateAsync(defaultUser, Authorization.default_password);

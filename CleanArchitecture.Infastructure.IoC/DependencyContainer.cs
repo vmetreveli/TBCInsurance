@@ -5,8 +5,8 @@ using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Services;
 using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
-using CleanArchitecture.Infrastructure.Data.Context;
 using CleanArchitecture.Infra.Data.Repositories;
+using CleanArchitecture.Infrastructure.Data.Context;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +18,7 @@ namespace CleanArchitecture.Infrastructure.IoC
         public static void RegisterServices(this IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
-            
+
             //CleanArchitecture.Application
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<DbContext, UniDbContext>();

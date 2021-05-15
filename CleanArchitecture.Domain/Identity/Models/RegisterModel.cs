@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
 namespace CleanArchitecture.Domain.Models.Entities
 {
     public class RegisterModel
