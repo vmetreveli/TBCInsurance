@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
+using CleanArchitecture.Domain.Identity.Models;
+using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Domain.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers.v1

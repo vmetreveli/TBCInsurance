@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Domain;
 using CleanArchitecture.Domain.Identity.AppSettings;
+using CleanArchitecture.Domain.Identity.Models;
+using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Domain.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;

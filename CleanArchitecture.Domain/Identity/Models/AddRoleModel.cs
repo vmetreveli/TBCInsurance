@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace CleanArchitecture.Domain.Models.Entities
+namespace CleanArchitecture.Domain.Models
 {
     public class AddRoleModel
     {

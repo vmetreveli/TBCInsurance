@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using CleanArchitecture.Domain.Identity.AppSettings;
+using CleanArchitecture.Domain.Identity.Models;
 using CleanArchitecture.Domain.Models.Entities;
 using CleanArchitecture.Infrastructure.Data.Context;
 using CleanArchitecture.Infrastructure.IoC;

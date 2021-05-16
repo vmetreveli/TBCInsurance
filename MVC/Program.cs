@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CleanArchitecture.Domain.Identity.Models;
 using CleanArchitecture.Domain.Models.Entities;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Microsoft.AspNetCore.Hosting;
