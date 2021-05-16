@@ -23,7 +23,7 @@ namespace CleanArchitecture.Application.Services
         public async Task<IEnumerable<Company>> GetCompanies(PageFilter filter)
         {
 
-            const string query = "SELECT * FROM Company ORDER BY created_date DESC Limit @Limit Offset @Offset";
+            const string query = @"SELECT * FROM ""Companies"" ORDER BY ""Time"" DESC Limit ""@Limit"" Offset ""@Offset""";
             using IDbConnection db = new SqlConnection(_connectionString);
             var results = await db.QueryAsync<Company>(query, new { Limit = filter.PageSize, Offset = filter.PageIndex });
 
