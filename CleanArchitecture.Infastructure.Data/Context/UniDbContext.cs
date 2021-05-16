@@ -1,10 +1,8 @@
-﻿using CleanArchitecture.Domain.Identity.Models;
-using CleanArchitecture.Domain.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using CleanArchitecture.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 namespace CleanArchitecture.Infrastructure.Data.Context
 {
-    public class UniDbContext : IdentityDbContext<User>
+    public class UniDbContext :DbContext
     {
 
         // public UniDbContext(DbContextOptions options) : base(options)
@@ -14,7 +12,6 @@ namespace CleanArchitecture.Infrastructure.Data.Context
             : base(options)
         {
         }
-        public DbSet<Student> Students { get; set; }
         public DbSet<Market> Markets { get; set; }
         public DbSet<Company> Companies { get; set; }
     }

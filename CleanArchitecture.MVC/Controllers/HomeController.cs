@@ -24,9 +24,7 @@ namespace MVC.Controllers
             View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
 
 
-        public IActionResult Logout()
-        {
-            return SignOut("Cookies", "oidc");
-        }
+        public IActionResult Logout() =>
+            SignOut("Cookies", "oidc");
     }
 }

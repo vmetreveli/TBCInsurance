@@ -80,9 +80,9 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
-            "System.Data.SqlClient": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[5.0.5, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -232,14 +232,6 @@
               "version": "[8.1.1, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.6, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.6, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[5.0.6, )"
             },

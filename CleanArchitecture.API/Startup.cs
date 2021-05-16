@@ -1,19 +1,13 @@
-using System;
-using System.Text;
-using CleanArchitecture.Domain.Identity.AppSettings;
-using CleanArchitecture.Domain.Identity.Models;
 using CleanArchitecture.Infrastructure.Data.Context;
 using CleanArchitecture.Infrastructure.IoC;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 namespace API
 {
@@ -30,14 +24,16 @@ namespace API
             services.AddDbContext<UniDbContext>(options =>
                 options.UseNpgsql(
                     Configuration.GetConnectionString("DefaultConnection")));
-   services.AddSwaggerGen(c =>
+
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TheCodeBuzz-Service", Version = "v1" });
 
             });
-   services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme);
 
-     services.AddControllers();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme);
+
+            services.AddControllers();
 
             // services.AddMediatR(typeof(Startup));
             RegisterServices(services);
@@ -80,7 +76,7 @@ namespace API
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseAuthorization();
 
             // Shows UseCors with CorsPolicyBuilder.

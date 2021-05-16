@@ -1,5 +1,4 @@
 using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace MVC.Controllers
@@ -16,13 +15,7 @@ namespace MVC.Controllers
 
         public IActionResult Dashboard()
         {
-            var pageFilter = new PageFilter
-            {
-                PageIndex = 0,
-                PageSize = 15
-            };
-
-            var res = _company.GetCompanies(pageFilter);
+            var res = _company.GetCompanies();
             return View(res);
         }
     }

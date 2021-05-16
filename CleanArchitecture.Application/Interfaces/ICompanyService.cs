@@ -5,7 +5,7 @@ namespace CleanArchitecture.Application.Interfaces
 {
     public interface ICompanyService
     {
-        Task<IEnumerable<Company>> GetCompanies(PageFilter filter);
+        Task<IEnumerable<Company>> GetCompanies();
         Task<int> CompanyRegister(Company model);
         Task<Company> GetCompanyById(int id);
         Task<int> AddCompanyInMarket(Company model);

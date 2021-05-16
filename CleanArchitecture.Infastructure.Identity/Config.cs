@@ -36,23 +36,25 @@ namespace IdentityServer4InMem
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
 
-                    RedirectUris = {
+                    RedirectUris =
+                    {
                         "https://localhost:5001/signin-oidc",
-                        "http://localhost:5000/signin-oidc"},
+                        "http://localhost:5000/signin-oidc"
+                    },
 
 
-                // where to redirect to after logout
-                PostLogoutRedirectUris =
-                {
-                    "https://localhost:5001/signout-callback-oidc",
-                    "https://localhost:5002/signout-callback-oidc"
-                },
+                    // where to redirect to after logout
+                    PostLogoutRedirectUris =
+                    {
+                        "https://localhost:5001/signout-callback-oidc",
+                        "https://localhost:5002/signout-callback-oidc"
+                    },
 
-                AllowedScopes = new List<string>
-                {
-                    IdentityServerConstants.StandardScopes.OpenId,
-                    IdentityServerConstants.StandardScopes.Profile
-                }
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
+                    }
 
                 },
 

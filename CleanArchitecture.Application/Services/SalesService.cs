@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 namespace CleanArchitecture.Application.Services
 {
     public class SalesService : ISalesService
@@ -21,7 +21,8 @@ namespace CleanArchitecture.Application.Services
 
         public async Task<IEnumerable<Market>> GetCompanyByMarket(Market model)
         {
-            using IDbConnection db = new SqlConnection(_connectionString);
+            using IDbConnection db = new NpgsqlConnection
+                (_connectionString);
             var sqlQuery = $@"Select * From Market where Id = ""{model.Id}""";
             return db.Query<Market>(sqlQuery);
         }
