@@ -1,0 +1,54 @@
+@model Task<IEnumerable<CleanArchitecture.Domain.Models.Company>>
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>title</h2>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Result.FirstOrDefault().Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result.FirstOrDefault().CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result.FirstOrDefault().Market.MarketName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result.FirstOrDefault().Market.Price)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Result)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Market.MarketName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Market.Price)
+            </td>
+            <td>
+                @* <a asp-page="./Edit" asp-route-id="@item.CourseID">Edit</a> | *@
+                @* <a asp-page="./Details" asp-route-id="@item.CourseID">Details</a> | *@
+                @* <a asp-page="./Delete" asp-route-id="@item.CourseID">Delete</a> *@
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

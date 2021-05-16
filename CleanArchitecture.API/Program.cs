@@ -17,23 +17,6 @@ namespace API
             var host = CreateHostBuilder(args)
                 .Build();
 
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
-
-                try
-                {
-                    //Seed Default Users
-                    var userManager = services.GetRequiredService<UserManager<User>>();
-                    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-                    await UniDbContextSeed.SeedEssentialsAsync(userManager, roleManager);
-                }
-                catch(Exception ex)
-                {
-
-                }
-            }
 
             await host.RunAsync();
         }
