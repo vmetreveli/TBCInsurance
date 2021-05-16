@@ -6,7 +6,5 @@ namespace API.Controllers.v1
     [Authorize(Roles = "Administrator")]
     public class CompanyController : ApiController
     {
-
-        
     }
 }

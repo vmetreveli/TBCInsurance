@@ -7,8 +7,6 @@ using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-
 namespace CleanArchitecture.Application.Services
 {
     public class SalesService : ISalesService
@@ -17,11 +15,8 @@ namespace CleanArchitecture.Application.Services
         private readonly string _connectionString;
 
 
-        public SalesService(UniDbContext dbContext)
-        {
-
+        public SalesService(UniDbContext dbContext) =>
             _connectionString = dbContext.Database.GetDbConnection().ConnectionString;
-        }
 
 
         public async Task<IEnumerable<Market>> GetCompanyByMarket(Market model)

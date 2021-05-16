@@ -22,13 +22,15 @@ namespace CleanArchitecture.Application.Services
         private readonly JwtToken _jwt;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
 
-        public UserService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager,
+        public UserService(UserManager<User> userManager,SignInManager<User> signInManager, RoleManager<IdentityRole> roleManager,
             IOptions<JwtToken> jwt)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _jwt = jwt.Value;
+            _signInManager = signInManager;
         }
 
         public async Task<string> RegisterAsync(RegisterModel model)
@@ -104,6 +106,7 @@ namespace CleanArchitecture.Application.Services
 
             return $"Incorrect Credentials for user {user.Email}.";
         }
+
         private async Task<JwtSecurityToken> CreateJwtToken(User user)
         {
             var userClaims = await _userManager.GetClaimsAsync(user);
@@ -133,5 +136,8 @@ namespace CleanArchitecture.Application.Services
 
             return jwtSecurityToken;
         }
+
+        public  Task SignOutAsync() =>
+            _signInManager.SignOutAsync();
     }
 }

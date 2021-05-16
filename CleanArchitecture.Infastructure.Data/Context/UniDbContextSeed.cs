@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using CleanArchitecture.Domain;
 using CleanArchitecture.Domain.Identity.Models;
-using CleanArchitecture.Domain.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 namespace CleanArchitecture.Infrastructure.Data.Context
 {

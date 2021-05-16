@@ -7,6 +7,5 @@ namespace CleanArchitecture.Application.Interfaces
     {
 
         Task<IEnumerable<Market>> GetCompanyByMarket(Market model);
-
     }
 }

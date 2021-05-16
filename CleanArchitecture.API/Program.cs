@@ -1,7 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Identity.Models;
-using CleanArchitecture.Domain.Models.Entities;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;

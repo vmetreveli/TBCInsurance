@@ -5,12 +5,10 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Interfaces;
-using CleanArchitecture.Domain.Interfaces;
 using CleanArchitecture.Domain.Models;
 using CleanArchitecture.Infrastructure.Data.Context;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Z.Dapper.Plus;
 namespace CleanArchitecture.Application.Services
 {
@@ -19,10 +17,8 @@ namespace CleanArchitecture.Application.Services
         private readonly string _connectionString;
 
 
-        public CompanyService(UniDbContext dbContext)
-        {
+        public CompanyService(UniDbContext dbContext) =>
             _connectionString = dbContext.Database.GetDbConnection().ConnectionString;
-        }
 
         public async Task<IEnumerable<Company>> GetCompanies(PageFilter filter)
         {
@@ -58,16 +54,6 @@ namespace CleanArchitecture.Application.Services
             using IDbConnection db = new SqlConnection(_connectionString);
             return await db.QueryFirstOrDefaultAsync<Company>(sqlQuery);
         }
-        public async Task<IEnumerable<Company>> GetAllPagedAsync(int limit, int offset)
-        {
-            // var tableName = typeof(T).Name;
-            // assuming here you want the newest rows first, and column name is "created_date"
-            // may also wish to specify the exact columns needed, rather than *
-            const string query = "SELECT * FROM Company ORDER BY created_date DESC Limit @Limit Offset @Offset";
-            using IDbConnection db = new SqlConnection(_connectionString);
-            var results = await db.QueryAsync<Company>(query, new { Limit = limit, Offset = offset });
-            return results;
-        }
 
 
         public async Task<int> AddCompanyInMarket(Company model)
@@ -96,8 +82,16 @@ namespace CleanArchitecture.Application.Services
             return await db.ExecuteAsync(sqlQuery);
 
         }
-
-
+        public async Task<IEnumerable<Company>> GetAllPagedAsync(int limit, int offset)
+        {
+            // var tableName = typeof(T).Name;
+            // assuming here you want the newest rows first, and column name is "created_date"
+            // may also wish to specify the exact columns needed, rather than *
+            const string query = "SELECT * FROM Company ORDER BY created_date DESC Limit @Limit Offset @Offset";
+            using IDbConnection db = new SqlConnection(_connectionString);
+            var results = await db.QueryAsync<Company>(query, new { Limit = limit, Offset = offset });
+            return results;
+        }
     }
 
 }

@@ -3,7 +3,6 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using CleanArchitecture.Domain.Interfaces;
-using CleanArchitecture.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 namespace CleanArchitecture.Infra.Data.Repositories
 {

@@ -1,10 +1,6 @@
 using CleanArchitecture.Application.Interfaces;
 using CleanArchitecture.Application.Services;
-using CleanArchitecture.Domain.Interfaces;
-using CleanArchitecture.Domain.Models;
-using CleanArchitecture.Infra.Data.Repositories;
 using CleanArchitecture.Infrastructure.Data.Context;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 namespace CleanArchitecture.Infrastructure.IoC

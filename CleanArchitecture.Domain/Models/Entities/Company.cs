@@ -10,6 +10,5 @@ namespace CleanArchitecture.Domain.Models
         public string CompanyName { get; set; }
         public Market Market { get; set; }
         public DateTime Time { get; set; } = DateTime.Now;
-
     }
 }

@@ -8,14 +8,27 @@
     <ItemGroup>
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
       <PackageReference Include="CustomizedSwagger" Version="1.0.1" />
+      <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
+      <PackageReference Include="Microsoft.AspNet.WebApi.Owin" Version="5.2.7" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6" />
+      <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.2.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\CleanArchitecture.Infastructure.Data\CleanArchitecture.Infastructure.Data.csproj" />
       <ProjectReference Include="..\CleanArchitecture.Infastructure.IoC\CleanArchitecture.Infastructure.IoC.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Authentication\Login.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_LoginPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
     </ItemGroup>
 
 </Project>
