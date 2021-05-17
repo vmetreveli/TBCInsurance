@@ -36,3 +36,22 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/obj/Debug/net5.0/CleanArchitecture.Infastructure.IoC.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/obj/Debug/net5.0/ref/CleanArchitecture.Infastructure.IoC.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/obj/Debug/net5.0/CleanArchitecture.Infastructure.IoC.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Infastructure.IoC.deps.json
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Infastructure.IoC.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\ref\CleanArchitecture.Infastructure.IoC.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Infastructure.IoC.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Application.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Infastructure.Data.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Application.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Infastructure.Data.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\bin\Debug\net5.0\CleanArchitecture.Domain.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.csprojAssemblyReference.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.AssemblyInfoInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.AssemblyInfo.cs
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.csproj.CoreCompileInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.csproj.CopyComplete
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\ref\CleanArchitecture.Infastructure.IoC.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Infastructure.IoC\obj\Debug\net5.0\CleanArchitecture.Infastructure.IoC.pdb

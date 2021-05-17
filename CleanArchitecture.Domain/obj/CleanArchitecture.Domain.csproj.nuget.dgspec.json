@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {}
+    "D:\\Work\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {}
   },
   "projects": {
-    "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+    "D:\\Work\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+        "projectUniqueName": "D:\\Work\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
         "projectName": "CleanArchitecture.Domain",
-        "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
-        "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-        "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/",
+        "projectPath": "D:\\Work\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+        "packagesPath": "C:\\Users\\vmetreveli\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\CleanArchitecture\\CleanArchitecture.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmetreveli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugets.lemondo.com/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -71,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

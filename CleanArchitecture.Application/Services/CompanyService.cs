@@ -53,9 +53,16 @@ namespace CleanArchitecture.Application.Services
 
         public async Task<Company> GetCompanyById(int id)
         {
-            var sqlQuery = $@"Select * From ""Companies"" where ""Id"" = {id}";
+            var sqlQuery = $@"SELECT * FROM ""Companies"" c left join ""Markets""
+                                        on ""Markets"".""Id"" = c.""Id""
+                                        where c.""Id"" = {id}  ORDER BY c.""Time"" DESC";
             using IDbConnection db = new NpgsqlConnection(_connectionString);
-            return await db.QueryFirstOrDefaultAsync<Company>(sqlQuery);
+            var results=  db.QueryAsync<Company,Market, Company>(sqlQuery,(company, market) => {
+                company.Market = market;
+                return company;
+            }, splitOn: "id").Result.FirstOrDefault();
+
+            return results;
         }
 
 
