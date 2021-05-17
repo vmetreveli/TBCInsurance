@@ -30,3 +30,20 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/CleanArchitecture.Application.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/ref/CleanArchitecture.Application.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net5.0/CleanArchitecture.Application.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Application.deps.json
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Application.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\ref\CleanArchitecture.Application.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Application.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Infastructure.Data.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Domain.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Application\bin\Debug\net5.0\CleanArchitecture.Infastructure.Data.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.csprojAssemblyReference.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.AssemblyInfoInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.AssemblyInfo.cs
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.csproj.CoreCompileInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.csproj.CopyComplete
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\ref\CleanArchitecture.Application.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Application\obj\Debug\net5.0\CleanArchitecture.Application.pdb

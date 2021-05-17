@@ -25,3 +25,18 @@
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/ref/CleanArchitecture.Domain.dll
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.pdb
 /Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Domain/obj/Debug/net5.0/CleanArchitecture.Domain.genruntimeconfig.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\CleanArchitecture.Domain.deps.json
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\CleanArchitecture.Domain.runtimeconfig.json
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\CleanArchitecture.Domain.runtimeconfig.dev.json
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\ref\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\bin\Debug\net5.0\CleanArchitecture.Domain.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.csprojAssemblyReference.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.AssemblyInfo.cs
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\ref\CleanArchitecture.Domain.dll
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.pdb
+D:\Work\CleanArchitecture\CleanArchitecture.Domain\obj\Debug\net5.0\CleanArchitecture.Domain.genruntimeconfig.cache
