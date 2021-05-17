@@ -2176,36 +2176,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/vmetreveli/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\vmetreveli\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj",
+      "projectUniqueName": "D:\\Work\\CleanArchitecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
       "projectName": "CleanArchitecture.API",
-      "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/CleanArchitecture.API.csproj",
-      "packagesPath": "/Users/vmetreveli/.nuget/packages/",
-      "outputPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.API/obj/",
+      "projectPath": "D:\\Work\\CleanArchitecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
+      "packagesPath": "C:\\Users\\vmetreveli\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\CleanArchitecture\\CleanArchitecture.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/vmetreveli/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\vmetreveli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugets.lemondo.com/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj": {
-              "projectPath": "/Users/vmetreveli/Library/Mobile Documents/com~apple~CloudDocs/Projects/AspCore/CleanArchitecture/CleanArchitecture.Infastructure.IoC/CleanArchitecture.Infastructure.IoC.csproj"
+            "D:\\Work\\CleanArchitecture\\CleanArchitecture.Infastructure.IoC\\CleanArchitecture.Infastructure.IoC.csproj": {
+              "projectPath": "D:\\Work\\CleanArchitecture\\CleanArchitecture.Infastructure.IoC\\CleanArchitecture.Infastructure.IoC.csproj"
             }
           }
         }
@@ -2277,7 +2280,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   },
