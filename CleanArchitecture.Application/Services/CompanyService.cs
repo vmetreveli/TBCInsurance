@@ -85,8 +85,8 @@ namespace CleanArchitecture.Application.Services
         {
             using IDbConnection db = new NpgsqlConnection(_connectionString);
 
-            var sqlQuery = $@"UPDATE Market set FirstName='{model.Market.Price
-            }' WHERE Id=" + model.Market.Id;
+            var sqlQuery = $@"UPDATE ""Markets"" set ""Price""='{model.Market.Price
+            }' WHERE ""Id""=" + model.Market.Id;
 
             return await db.ExecuteAsync(sqlQuery);
         }
